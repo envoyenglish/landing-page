@@ -141,6 +141,44 @@ export const WhiteCell = styled.div`
   }
 `;
 
+export const WeekBlock = styled.div`
+  border: ${primary} 2px solid;
+  border-left: ${primary} 20px solid;
+  border-radius: 0px 10px 10px 0px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5%;
+
+  @media only screen and (max-width: 768px) {
+    flex-wrap: wrap;
+  }
+
+  @media only screen and (max-width: 425px) {
+    border: 0;
+  }
+`;
+
+export const ClassSection = styled.div`
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  justify-content: center;
+  flex-basis: 50%;
+
+  @media only screen and (max-width: 768px) {
+    flex-wrap: wrap;
+    img {
+      width: 75%
+    }
+  }
+
+  @media only screen and (max-width: 425px) {
+    padding: 5%;
+    flex-basis: auto;
+  }
+`;
+
 export const Row = styled.div`
   width: 90%;
   display: flex;
