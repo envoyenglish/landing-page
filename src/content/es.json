@@ -185,20 +185,5 @@
   "BetaProgram": {
     "title": "Sobre el programa beta",
     "description": "El programa beta es una oferta especial para nuestros primeros 250 estudiantes. Para participar en el programa beta, los estudiantes tienen que rellenar un formulario de retroalimentación después de cada clase. Todas las clases en el programa beta son gratis."
-  },
-  "Products": {
-    "title": "Startup Business English Class",
-    "price": "$2,200 MXN",
-    "classes": "8 classes",
-    "buy_now": "Buy Now",
-    "class_a2_am": "Startup Business English (A1-A2)",
-    "schedule_a2_am": "Tues & Thurs at 8am",
-    "dates_a2_am": "June 16 - July 9",
-    "class_a2_pm": "Startup Business English (A2)",
-    "schedule_a2_pm": "Tues & Thurs at 5pm",
-    "dates_a2_pm": "June 16 - July 9",
-    "class_b1_pm": "Startup Business English (B1-B2)",
-    "schedule_b1_pm": "Tues & Thurs at 7pm",
-    "dates_b1_pm": "June 16 - July 9"
   }
 }
