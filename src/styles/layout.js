@@ -148,7 +148,7 @@ export const WeekBlock = styled.div`
   padding: 20px;
   display: flex;
   flex-direction: row;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
 
   @media only screen and (max-width: 768px) {
     flex-wrap: wrap;

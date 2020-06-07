@@ -131,6 +131,10 @@ export const Tube = styled.div`
       color: white;
     }
   }
+
+  @media only screen and (max-width: 425px) {
+    font-size: .8em;
+  }
 `;
 
 export const LevelDescription = styled.div`

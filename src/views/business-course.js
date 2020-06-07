@@ -130,7 +130,7 @@ class BusinessCommunicationCourse extends Component {
       </ColoredContainer>
 
       <Container>
-        <h1>{messages.curriculum}</h1>
+        <h1 style={{marginBottom: '10px'}}>{messages.curriculum}</h1>
         {
           Weeks.map((week, i) => {
             let imgSrc = investmentpitch;
