@@ -64,12 +64,12 @@ class LandingPage2 extends Component {
         <Row>
           <p className="hero-description">{messages.Hero.description}</p>
         </Row>
+        <Row id="course-offer">
+          <Chip>NEW!</Chip><Link style={{textAlign: 'left', paddingLeft: '8px'}} to='/business-communication-course'><span>{messages.Hero.course_offer}</span></Link>
+        </Row>
         <Row>
           <HashLink to="/#how-it-works"><Button>{messages.Hero.button_1}</Button></HashLink>
           <Link to='/register'><Button primary>{messages.Hero.button_2}</Button></Link>
-        </Row>
-        <Row>
-          <Chip>NEW!</Chip><Link to='/business-communication-course'><span style={{textAlign: 'left'}}>{messages.Hero.course_offer}</span></Link>
         </Row>
       </Container>
       <ColoredContainer style={{paddingBottom: '5%'}}>

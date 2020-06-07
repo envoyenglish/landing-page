@@ -545,3 +545,9 @@
 .contact-link {
   color: white;
 }
+
+#course-offer {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+}
