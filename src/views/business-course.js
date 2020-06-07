@@ -3,7 +3,6 @@ import {Container, WeekBlock, Row, ColoredContainer, WhiteCell, ClassSection} fr
 import {StyledPaymentForm} from '../styles/ui-components';
 import {Button, Circle, LevelDescription, Tube} from '../styles/ui-components';
 import {HashLink} from 'react-router-hash-link';
-import Reviews from '../components/reviews';
 import Header from '../components/header';
 import {secondary} from '../styles/colors';
 
@@ -176,9 +175,9 @@ class BusinessCommunicationCourse extends Component {
         })
       }   
       </Container>
-      <ColoredContainer secondary>
-        <Reviews/>
-      </ColoredContainer>
+      {/* <ColoredContainer secondary>
+        <h1>Reviews</h1>
+      </ColoredContainer> */}
       <Container id="payment-form">
         <StyledPaymentForm 
           src="https://www.cognitoforms.com/AgaveCommerce/ClassSignUp"

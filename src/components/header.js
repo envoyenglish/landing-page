@@ -17,7 +17,7 @@ import Select from '@material-ui/core/Select';
 const iconStyle={
   'width': '45px',
   'marginRight': '20px',
-  'min-width': '100%'
+  'minWidth': '100%'
 }
 
 class Header extends Component {
