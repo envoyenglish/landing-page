@@ -58,7 +58,7 @@ class SignupWidget extends Component {
         <h1>{messages.FreeTrial.contact}</h1>
         <Row>{messages.FreeTrial.contact_description}</Row>
         <Row>
-          <EmailForm url={'https://services.cognitoforms.com/f/neg3yezHME-sqGKAznf3rA?id=43'}/>
+          <EmailForm url={'https://www.cognitoforms.com/AgaveCommerce/EnvoyEnglishEmailSignup'}/>
         </Row>
       </ColoredContainer>
       <Footer header={messages.Contact.header}/>

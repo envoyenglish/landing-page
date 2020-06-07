@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Container, WeekBlock, Row, ColoredContainer, WhiteCell, ClassSection} from '../styles/layout';
 import {StyledPaymentForm} from '../styles/ui-components';
-import {Button, Circle, LevelDescription, Tube} from '../styles/ui-components';
+import {Button, Circle, LevelDescription, Tube, Chip} from '../styles/ui-components';
 import {HashLink} from 'react-router-hash-link';
 import Header from '../components/header';
 import {secondary} from '../styles/colors';
@@ -15,7 +15,11 @@ import investmentpitch from '../assets/InvestmentPitch.png';
 import firstsale from '../assets/FirstSale.png';
 import customercrisis from '../assets/CustomerCrisis.png';
 import businessplan from '../assets/BusinessPlan.png';
-import workshop from '../assets/Workshop.png';
+
+import workshopinvestmentpitch from '../assets/WorkshopInvestmentPitch.png';
+import workshopfirstsale from '../assets/WorkshopFirstSale.png';
+import workshopcustomercrisis from '../assets/WorkshopCustomerCrisis.png';
+import workshopbusinessplan from '../assets/WorkshopBusinessPlan.png';
 
 const translations = {EN, ES};
 
@@ -92,37 +96,37 @@ class BusinessCommunicationCourse extends Component {
               <Circle className="circle">A2</Circle>
               <LevelDescription>
                 <p style={{'fontWeight': '600', 'fontFamily': 'Exo, sans-serif'}}>{messages.dates}</p> 
-                <p>{messages.days} 8AM</p>
+                <p>{messages.days}<Chip>8AM CDMX</Chip></p>
               </LevelDescription>
             </div>
               <HashLink to="/business-communication-course/#payment-form">
-                <Button primary>{messages.register_now}</Button>
+                <Button primary>{messages.register}</Button>
               </HashLink>
           </Tube>
 
           <Tube style={{justifyContent: 'space-between'}}>
             <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>              
-              <Circle className="circle">B1</Circle>
+              <Circle className="circle">A2</Circle>
               <LevelDescription>
                 <p style={{'fontWeight': '600', 'fontFamily': 'Exo, sans-serif'}}>{messages.dates}</p> 
-                <p>{messages.days} 5PM</p>
+                <p>{messages.days}<Chip>5PM CDMX</Chip></p>
               </LevelDescription>
             </div>
               <HashLink to="/business-communication-course/#payment-form">
-                <Button primary>{messages.register_now}</Button>
+                <Button primary>{messages.register}</Button>
               </HashLink>
           </Tube>
 
           <Tube style={{justifyContent: 'space-between'}}>
             <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>              
-              <Circle className="circle">B2</Circle>
+              <Circle className="circle">B1+</Circle>
               <LevelDescription>
                 <p style={{'fontWeight': '600', 'fontFamily': 'Exo, sans-serif'}}>{messages.dates}</p> 
-                <p>{messages.days} 7PM</p>
+                <p>{messages.days}<Chip>7PM CDMX</Chip></p>
               </LevelDescription>
             </div>
             <HashLink to="/business-communication-course/#payment-form">
-              <Button primary>{messages.register_now}</Button>
+              <Button primary>{messages.register}</Button>
             </HashLink>
           </Tube>
 
@@ -150,10 +154,29 @@ class BusinessCommunicationCourse extends Component {
                 imgSrc = investmentpitch;
                 break;
             }
+
+            let workshopSrc = workshopinvestmentpitch;  
+            switch(week.workshop_image) {
+              case 'investmentpitch':
+                workshopSrc = workshopinvestmentpitch;
+                break;
+              case 'firstsale':
+                workshopSrc = workshopfirstsale;
+                break;
+              case 'customercrisis':
+                workshopSrc = workshopcustomercrisis;
+                break;
+              case 'businessplan':
+                workshopSrc = workshopbusinessplan;
+                break;
+              default:
+                workshopSrc = workshopinvestmentpitch;
+                break;
+            }
             return <WeekBlock key={i}>
             <ClassSection>
               <div style={{padding: '5%', textAlign: 'center'}}>
-                <img src={workshop} width="90%"/>
+                <img src={workshopSrc.toString()} width="90%"/>
               </div>
               <div>
                 <h4>{week.week_number}{messages.workshop}</h4>
@@ -179,6 +202,7 @@ class BusinessCommunicationCourse extends Component {
         <h1>Reviews</h1>
       </ColoredContainer> */}
       <Container id="payment-form">
+        <h1>{messages.register_now}</h1>
         <StyledPaymentForm 
           src="https://www.cognitoforms.com/AgaveCommerce/ClassSignUp"
           scrolling="no"

@@ -9,7 +9,7 @@ class EmailForm extends Component {
         src={this.props.url}
         title='email-form'
         frameborder="0"
-        scrolling="yes"
+        scrolling="no"
         seamless="seamless"
       />
     );

@@ -62,9 +62,9 @@ class Header extends Component {
             <ApplicationDeadline>
               <Badge color="secondary" badgeContent={1} showZero style={{flexDirection: 'row-reverse', textDecoration: 'none'}}>
                 <FontAwesomeIcon color='lightgray' size="2x" icon={faEnvelope}/>
-                <Typography style={{position: 'relative', top: '-10px', right: '10px', textDecoration: 'none'}}>
+                <Typography style={{position: 'relative', top: '-10px', right: '10px', textTransform: 'none'}}>
                   {this.props.language === 'EN' && <><Chip>NEW!</Chip><Link to='/business-communication-course'>Business Communication Course</Link></>}
-                  {this.props.language === 'ES' && <><Chip>¡NUEVO!</Chip><Link to='/business-communication-course'>¡Únete al Curso de Business!</Link></>}
+                  {this.props.language === 'ES' && <><Chip>¡NUEVO!</Chip><Link to='/business-communication-course'>¡Únete a un curso de negocios!</Link></>}
                 </Typography>
               </Badge>
             </ApplicationDeadline>
