@@ -54,7 +54,7 @@ class Missions extends Component {
                 </div>
                 <div>
                   <p>Available for: {mission.levels}</p>
-                  <Link to='/apply'><Button primary>Join Mission</Button></Link>
+                  <Link to='/register'><Button primary>Join Mission</Button></Link>
                 </div>
               </Cell>
             })

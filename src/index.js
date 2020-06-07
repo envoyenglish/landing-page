@@ -15,7 +15,7 @@ import Missions from './views/missions';
 import Apply from './views/apply';
 import PricingTable from './views/pricing';
 import FeedbackForm from './views/feedback';
-import ProductsTable from './views/products';
+import BusinessCommunicationCourse from './views/business-course';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -40,9 +40,10 @@ ReactDOM.render(
       <Route path='/free-class-code' component={FreeClassCode}/>
       <Route path='/audio' component={SignupWidget}/>
       <Route path='/apply' component={Apply}/>
+      <Route path='/register' component={Apply}/>
       <Route path='/business' component={BusinessProgram}/>
       <Route path='/feedback' component={FeedbackForm}/>
-      <Route path='/products' component={ProductsTable}/>
+      <Route path='/business-communication-course' component={BusinessCommunicationCourse}/>
       <Redirect to='/'/>
     </Switch>
   </BrowserRouter>

@@ -1,8 +1,8 @@
 {
-  "title": "Communicate like a Boss!",
-  "tagline": "Envoy English Business Course",
-  "description": "Pitch your business model to a panel of investors, make your first sale, and practice your presentation skills in the Envoy English Business Course: Communicate like a Boss!",
-  "buy_now": "Buy Now",
+  "title": "Envoy English Business Course",
+  "tagline": "Communicate like a Boss!",
+  "description": "Pitch your business model to a panel of investors, make your first sale, and practice your presentation skills in our business English course.",
+  "register_now": "Register Now",
   "course_overview": "Course Overview",
   "learning_goals": "Learning Goals",
   "course_information": "Course Information",
@@ -22,30 +22,29 @@
   "curriculum": "Curriculum",
   "weeks": [
     {
-      "week_number": "Week 1",
-      "mission_title": "Investment Pitch",
+      "week_number": "Week 1: ",
+      "mission_title": "Mission: Investment Pitch",
       "mission_image": "investmentpitch",
       "mission_description": "You just started a company, and you need some investment. Can you persuade the investors to fund your new business?",
       "workshop_description": "Describe industries, products, customers, and general business terms. Learn communication strategies for your upcoming Mission."
     },
     {
-      "week_number": "Week 2",
-      "mission_title": "Your First Sale",
+      "week_number": "Week 2: ",
+      "mission_title": "Mission: Your First Sale",
       "mission_image": "firstsale",
       "mission_description": "You just launched your first company, but you face fierce competition. Can you pitch your product to win your first sale?",
       "workshop_description": "Describe industries, products, customers, and general business terms. Learn communication strategies for your upcoming Mission."
-
     },
     {
-      "week_number": "Week 3",
-      "mission_title": "Customer Crisis",
+      "week_number": "Week 3: ",
+      "mission_title": "Mission: Customer Crisis",
       "mission_image": "customercrisis",
       "mission_description": "Your company has just released a new product, but something has gone terribly wrong. Can you resolve the customer complaints before time is up?",
       "workshop_description": "Describe industries, products, customers, and general business terms. Learn communication strategies for your upcoming Mission."
     },
     {
-      "week_number": "Week 4",
-      "mission_title": "The Business Plan",
+      "week_number": "Week 4: ",
+      "mission_title": "Mission: The Business Plan",
       "mission_image": "businessplan",
       "mission_description": "You and your teammates want to start a company, but you all have different ideas. Can you reach an agreement and present your final business plan?",
       "workshop_description": "Describe industries, products, customers, and general business terms. Learn communication strategies for your upcoming Mission."

@@ -47,19 +47,13 @@ class Application extends Component {
         <Row>
           <h4>{messages.Application.description_2}</h4>
         </Row>
-        <Row>
-          <HashLink to="/apply/#application"><FontAwesomeIcon id="down-arrow" color='lightgray' size="3x" icon={faChevronDown}/></HashLink>
-        </Row>
-      </Container>
-      <Container id="application">
-        <h4>{messages.Application.application_title}</h4>
-        <StyledApplicationForm 
-          src="https://services.cognitoforms.com/f/neg3yezHME-sqGKAznf3rA?id=36"
-          scrolling='yes'
-          frameBorder='0'
-          seamless='seamless'
-          title='application'          
-        />
+      <StyledApplicationForm 
+        src="https://services.cognitoforms.com/f/neg3yezHME-sqGKAznf3rA?id=36"
+        scrolling='yes'
+        frameBorder='0'
+        seamless='seamless'
+        title='application'          
+      />
       </Container>
       <Footer header={messages.Contact.header}/>
       </>

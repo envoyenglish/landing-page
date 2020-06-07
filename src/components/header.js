@@ -34,7 +34,7 @@ class Header extends Component {
         </div>
         <NavbarButtons>
           {this.props.page === 'landing' &&
-            <Link to='/apply'><Button primary>{this.props.buttonText}</Button></Link>
+            <Link to='/register'><Button primary>{this.props.buttonText}</Button></Link>
           }
           {this.props.page === 'briefing' &&
             <a target='_blank' href={this.props.pdf}>
@@ -53,8 +53,8 @@ class Header extends Component {
           }
           {(this.props.page === 'landing' || this.props.page === 'landing') &&
             <ApplicationDeadline>
-              {this.props.language === 'EN' && <Link id='business-sign-up' to='/business'>Join Our Business Partner Program</Link>}
-              {this.props.language === 'ES' && <Link id='business-sign-up' to='/business'>¡Únete al Programa de Business Partners!</Link>}
+              {this.props.language === 'EN' && <Link id='business-sign-up' to='/business-communication-course'>NEW! Business Communication Course</Link>}
+              {this.props.language === 'ES' && <Link id='business-sign-up' to='/business-communication-course'>¡NUEVO! ¡Únete al Curso de Business!</Link>}
             </ApplicationDeadline>
           }
         </NavbarButtons>

@@ -44,7 +44,7 @@ class PricingTable extends Component {
               Pricing.single_class && <h4 style={{textAlign: 'left', fontWeight: '100', margin: '0'}}>{Pricing.single_class}</h4>
             }
             <br/>
-            <Link to='/apply'><Button primary>{Pricing.beta_trial}</Button></Link>
+            <Link to='/register'><Button primary>{Pricing.beta_trial}</Button></Link>
             <h4>{Pricing.whats_included}</h4>
             <div style={{margin: '0 5%'}}>
               <ul>
@@ -68,7 +68,7 @@ class PricingTable extends Component {
             }
             </div>
             <br/>
-            <Link to='/apply'><Button primary>{Pricing.beta_trial}</Button></Link>
+            <Link to='/register'><Button primary>{Pricing.beta_trial}</Button></Link>
             <h4>{Pricing.whats_included}</h4>
             <div style={{margin: '0 5%'}}>
               <ul>

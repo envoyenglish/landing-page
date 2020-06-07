@@ -64,7 +64,7 @@ class LandingPage extends Component {
         </Row>
         <Row>
           <HashLink to="/#how-it-works"><Button>{messages.Hero.button_1}</Button></HashLink>
-          <Link to='/apply'><Button primary>{messages.Hero.button_2}</Button></Link>
+          <Link to='/register'><Button primary>{messages.Hero.button_2}</Button></Link>
         </Row>
       </Container>
       <Container id="how-it-works">
@@ -142,7 +142,7 @@ class LandingPage extends Component {
                 <h5>{mission.subtitle}</h5>
               </div>
               <div>
-                <Link to='/apply'><Button>{messages.UpcomingMissions.button_1}</Button></Link>
+                <Link to='/register'><Button>{messages.UpcomingMissions.button_1}</Button></Link>
               </div>
             </Cell>
           })

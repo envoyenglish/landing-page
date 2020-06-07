@@ -3,7 +3,6 @@ import {Link} from 'react-router-dom';
 import {HashLink} from 'react-router-hash-link';
 import Footer from '../components/footer';
 import Header from '../components/header';
-import PricingTable from './pricing';
 
 //styles
 import {Container, ColoredContainer, Row, Cell, Grid} from '../styles/layout';
@@ -67,7 +66,7 @@ class LandingPage2 extends Component {
         </Row>
         <Row>
           <HashLink to="/#how-it-works"><Button>{messages.Hero.button_1}</Button></HashLink>
-          <Link to='/apply'><Button primary>{messages.Hero.button_2}</Button></Link>
+          <Link to='/register'><Button primary>{messages.Hero.button_2}</Button></Link>
         </Row>
       </Container>
       <ColoredContainer style={{paddingBottom: '5%'}}>
@@ -138,7 +137,7 @@ class LandingPage2 extends Component {
                 <h5>{mission.subtitle}</h5>
               </div>
               <div>
-                <Link to='/apply'><Button>{messages.Hero.button_2}</Button></Link>
+                <Link to='/register'><Button>{messages.Hero.button_2}</Button></Link>
               </div>
             </Cell>
           })
