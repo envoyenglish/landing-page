@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Container, WeekBlock, Row, ColoredContainer, WhiteCell, ClassSection} from '../styles/layout';
-import {Button, StyledPaymentForm} from '../styles/ui-components';
+import {StyledPaymentForm} from '../styles/ui-components';
+import {Button, Circle, LevelDescription, Tube} from '../styles/ui-components';
 import {Link} from 'react-router-dom';
 import {HashLink} from 'react-router-hash-link';
 import Header from '../components/header';
@@ -62,7 +63,7 @@ class BusinessCommunicationCourse extends Component {
 
       <ColoredContainer>
         <h1>{messages.course_overview}</h1>
-        <Row>
+        <Row style={{alignItems: 'center'}}>
           <div>
             <ul style={{listStyle: 'none', padding: '20px'}}>
               <li><h4 style={{color: secondary}}>{messages.communication}</h4></li>
@@ -74,17 +75,58 @@ class BusinessCommunicationCourse extends Component {
             </ul>
           </div>
           <WhiteCell style={{marginLeft: '20px'}}>
-            <h3>{messages.course_information}</h3>
+            <h4 style={{color: secondary}}>{messages.course_information}</h4>
             <ul>
               <li><span style={{fontWeight: '800', fontFamily: 'Exo'}}>Total Duration: </span>4 weeks</li>
-              <li><span style={{fontWeight: '800', fontFamily: 'Exo'}}>Dates: </span>{messages.dates}</li>
-              <li><span style={{fontWeight: '800', fontFamily: 'Exo'}}>Weekly Schedule: </span>{messages.days}</li>
+              <li><span style={{fontWeight: '800', fontFamily: 'Exo'}}>Total Classes: </span>8 classes</li>
               <li><span style={{fontWeight: '800', fontFamily: 'Exo'}}>Available Levels: </span>{messages.levels}</li>
               <li><span style={{fontWeight: '800', fontFamily: 'Exo'}}>Class Size: </span>{messages.class_size}</li>
               <li><span style={{fontWeight: '800', fontFamily: 'Exo'}}>Price: </span>{messages.price}</li>
             </ul>
           </WhiteCell>
         </Row>
+
+        {/* Class Schedule */}
+
+          <Tube style={{justifyContent: 'space-between'}}>
+            <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>              
+              <Circle className="circle">A2</Circle>
+              <LevelDescription>
+                <p style={{'fontWeight': '600', 'fontFamily': 'Exo, sans-serif'}}>{messages.dates}</p> 
+                <p>{messages.days} 8AM</p>
+              </LevelDescription>
+            </div>
+              <HashLink to="/business-communication-course/#payment-form">
+                <Button primary>{messages.register_now}</Button>
+              </HashLink>
+          </Tube>
+
+          <Tube style={{justifyContent: 'space-between'}}>
+            <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>              
+              <Circle className="circle">B1</Circle>
+              <LevelDescription>
+                <p style={{'fontWeight': '600', 'fontFamily': 'Exo, sans-serif'}}>{messages.dates}</p> 
+                <p>{messages.days} 5PM</p>
+              </LevelDescription>
+            </div>
+              <HashLink to="/business-communication-course/#payment-form">
+                <Button primary>{messages.register_now}</Button>
+              </HashLink>
+          </Tube>
+
+          <Tube style={{justifyContent: 'space-between'}}>
+            <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>              
+              <Circle className="circle">B2</Circle>
+              <LevelDescription>
+                <p style={{'fontWeight': '600', 'fontFamily': 'Exo, sans-serif'}}>{messages.dates}</p> 
+                <p>{messages.days} 7PM</p>
+              </LevelDescription>
+            </div>
+            <HashLink to="/business-communication-course/#payment-form">
+              <Button primary>{messages.register_now}</Button>
+            </HashLink>
+          </Tube>
+
       </ColoredContainer>
 
       <Container>
