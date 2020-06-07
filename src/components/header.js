@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import {Logo, Navbar, Button, NavbarButtons, ApplicationDeadline, StyledBusinessLink} from '../styles/ui-components';
+import {Logo, Navbar, Button, NavbarButtons, ApplicationDeadline, Chip} from '../styles/ui-components';
 import logo from '../assets/logo.png';
 import Badge from '@material-ui/core/Badge';
 
@@ -60,11 +60,11 @@ class Header extends Component {
           }
           {this.props.page === 'landing' &&
             <ApplicationDeadline>
-              <Badge color="secondary" badgeContent={1} showZero style={{flexDirection: 'row-reverse'}}>
+              <Badge color="secondary" badgeContent={1} showZero style={{flexDirection: 'row-reverse', textDecoration: 'none'}}>
                 <FontAwesomeIcon color='lightgray' size="2x" icon={faEnvelope}/>
-                <Typography style={{position: 'relative', top: '-10px', right: '10px'}}>
-                  {this.props.language === 'EN' && <><span style={{fontWeight: '800'}}>NEW! </span><Link to='/business-communication-course'>Business Communication Course</Link></>}
-                  {this.props.language === 'ES' && <><span style={{fontWeight: '800'}}>¡NUEVO! </span><Link to='/business-communication-course'>¡Únete al Curso de Business!</Link></>}
+                <Typography style={{position: 'relative', top: '-10px', right: '10px', textDecoration: 'none'}}>
+                  {this.props.language === 'EN' && <><Chip>NEW!</Chip><Link to='/business-communication-course'>Business Communication Course</Link></>}
+                  {this.props.language === 'ES' && <><Chip>¡NUEVO!</Chip><Link to='/business-communication-course'>¡Únete al Curso de Business!</Link></>}
                 </Typography>
               </Badge>
             </ApplicationDeadline>

@@ -1,21 +1,14 @@
 import styled, {css} from 'styled-components';
-import {primary} from './colors';
+import {primary, secondary} from './colors';
 
 export const ApplicationDeadline = styled.div`
   font-size: .8em;
-  font-weight: 800;
   text-transform: capitalize;
-  text-decoration: underline;
   position: relative;
   top: 10px;
   max-width: 250px;
   text-align: right;
   padding-right: 5%;
-  color: ${primary};
-
-  &:hover {
-    text-decoration: none;
-  }
 
   @media only screen and (max-width: 425px) {
     display: none;
@@ -216,4 +209,14 @@ export const StyledPaymentForm = styled.iframe`
   @media only screen and (max-width: 425px) {
     height: 1025px;
   }
+`;
+
+export const Chip = styled.span`
+  background-color: ${secondary};
+  text-transform: uppercase;
+  padding: 2px 8px;
+  font-weight: 600;
+  border-radius: 3px;
+  margin: 0 5px;
+  text-decoration: none;
 `;

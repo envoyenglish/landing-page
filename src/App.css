@@ -380,12 +380,16 @@
   }
 
   a {
-    text-decoration: none;
     font-family: 'Open Sans', sans-serif;
+    color: #292076; 
   }
 
   a:visited {
     color: gray;
+  }
+
+  a:hover {
+    text-decoration: none;
   }
 
   h1 {

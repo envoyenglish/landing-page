@@ -6,7 +6,7 @@ import Header from '../components/header';
 
 //styles
 import {Container, ColoredContainer, Row, Cell, Grid} from '../styles/layout';
-import {Button, Circle, LevelDescription, Tube} from '../styles/ui-components';
+import {Button, Circle, LevelDescription, Tube, Chip} from '../styles/ui-components';
 
 //content
 import EN from '../content/en.json';
@@ -67,6 +67,9 @@ class LandingPage2 extends Component {
         <Row>
           <HashLink to="/#how-it-works"><Button>{messages.Hero.button_1}</Button></HashLink>
           <Link to='/register'><Button primary>{messages.Hero.button_2}</Button></Link>
+        </Row>
+        <Row>
+          <Chip>NEW!</Chip><Link to='/business-communication-course'><span style={{textAlign: 'left'}}>{messages.Hero.course_offer}</span></Link>
         </Row>
       </Container>
       <ColoredContainer style={{paddingBottom: '5%'}}>
