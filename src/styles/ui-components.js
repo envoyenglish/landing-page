@@ -6,7 +6,9 @@ export const ApplicationDeadline = styled.div`
   font-weight: 800;
   text-transform: capitalize;
   text-decoration: underline;
-  max-width: 150px;
+  position: relative;
+  top: 10px;
+  max-width: 250px;
   text-align: right;
   padding-right: 5%;
   color: ${primary};
@@ -15,7 +17,7 @@ export const ApplicationDeadline = styled.div`
     text-decoration: none;
   }
 
-  @media only screen and (max-width: 512px) {
+  @media only screen and (max-width: 425px) {
     display: none;
   }
 `;
@@ -27,6 +29,8 @@ export const Button = styled.button`
   font-weight: 600;
   color: ${primary};
   margin: 0.5em 1em;
+  width: max-content;
+  max-height: 55px;
   padding: 1em 1.5em;
   cursor: pointer;
 
@@ -83,6 +87,12 @@ export const NavbarButtons = styled.div`
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
+
+  @media only screen and (min-width: 425px) and (max-width: 600px) {
+    #register {
+      display: none;
+    }
+  }
 `;
 
 export const Logo = styled.p`
@@ -90,6 +100,12 @@ export const Logo = styled.p`
   font-weight: 800;
   font-size: 1.5em;
   flex: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media only screen and (min-width: 425px) and (max-width: 768px) {
+    font-size: 1.2em;
+  }
 
   @media only screen and (min-width: 320px) and (max-width: 425px) {
     display: none;
