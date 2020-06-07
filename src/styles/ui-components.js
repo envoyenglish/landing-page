@@ -209,7 +209,7 @@ export const StyledPaymentForm = styled.iframe`
   padding-bottom: 5%;
 
   @media only screen and (max-width: 425px) {
-    height: 1700px;
+    height: 1800px;
   }
 `;
 

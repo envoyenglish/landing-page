@@ -3,7 +3,7 @@
     "title": "Bienvenido a Envoy English",
     "tagline": "Inglés para el mundo real",
     "description": "Ya no más clases aburridas. Con nuestras Misiones interactivas en línea, puedes mejorar rápidamente tus habilidades de conversación en inglés y tu capacidad de comunicarte en situaciones de la vida real.",
-    "course_offer": "Register for our Business Communication Course. Spaces are limited!",
+    "course_offer": "Regístrate en nuestro curso de comunicación para negocios. ¡Los espacios son limitados!",
     "button_1": "Cómo funciona",
     "button_2": "Inscríbete"
   },
@@ -83,12 +83,9 @@
     "header": "Contáctanos"
   },
   "Application": {
-    "header": "Regístrate para nuestra fase beta",
-    "tagline": "Encuentra tu nivel. Elige una Misión. ¡Comienza!",
-    "description_1": "Actualmente estamos aceptando solicitudes para nuestra fase beta. Para participar, sólo tienes que rellenar el siguiente formulario. Este formulario nos permitirá identificar tu nivel de inglés y recomendar las Misiones adecuadas para ti.",
-    "description_2": "¡Todas nuestras Misiones Beta son gratis! Los únicos requisitos son una computadora con cámara, micrófono y una buena conexión de internet.",
-    "application_title": "La aplicación para el programa beta",
-    "deadline": "¡Aceptando aplicaciones para el programa beta!"
+    "header": "Regístrate para una clase de prueba gratis",
+    "tagline": "Misión de Capacitación de Envoy English (30 minutos)",
+    "description_1": "Encuentra tu nivel. Elige una Misión. ¡Comienza!"
   },
   "Audio": {
     "header": "Prepárate para tu primera clase",
@@ -99,12 +96,12 @@
     "or": "O"
   },
   "FreeTrial": {
-    "header": "¡Bienvenido al programa beta!",
-    "tagline": "Inscríbete en tu primera Misión",
+    "header": "¡Listo! Registro completo",
+    "tagline": "Inscríbete en tu primera clase ahora",
     "description": "Practica tu inglés en una Misión de capacitación, y aprende cómo tener éxito en nuestras clases. Después de la clase, recibirás retroalimentación personalizada sobre tu nivel de inglés actual y consejos sobre cómo mejorar.",
     "button": "Inscríbete ahora",
-    "contact": "Contact Us for Additional Class Times",
-    "contact_description": "Are there no class times that suit your schedule? Contact us to request a custom class time."
+    "contact": "Contáctanos para horarios de clase adicionales",
+    "contact_description": "¿No hay horarios de clase que se adapten a tu agenda? Contáctanos para solicitar un horario personalizado de clase."
   },
   "FreeClassCode": {
     "header": "Consigue tu código para clases GRATIS",
