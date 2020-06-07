@@ -27,32 +27,32 @@
       "mission_title": "Mission: Investment Pitch",
       "mission_image": "investmentpitch",
       "workshop_image": "investmentpitch",
-      "mission_description": "You just started a company, and you need some investment. Can you persuade the investors to fund your new business?",
-      "workshop_description": "Describe industries, products, customers, and general business terms. Learn communication strategies for your upcoming Mission."
+      "mission_description": "You just started a company, and you need some investment. Can you persuade the investors to fund your new business? (55 minutes)",
+      "workshop_description": "Describe industries, products, customers, and general business terms. Learn communication strategies for your upcoming Mission. (45 minutes)"
     },
     {
       "week_number": "Week 2: ",
       "mission_title": "Mission: Your First Sale",
       "mission_image": "firstsale",
       "workshop_image": "firstsale",
-      "mission_description": "You just launched your first company, but you face fierce competition. Can you pitch your product to win your first sale?",
-      "workshop_description": "Describe industries, products, customers, and general business terms. Learn communication strategies for your upcoming Mission."
+      "mission_description": "You just launched your first company, but you face fierce competition. Can you pitch your product to win your first sale? (55 minutes)",
+      "workshop_description": "Compare and contrast products and customer needs. Learn communication strategies for persuasion and debate. (45 minutes)"
     },
     {
       "week_number": "Week 3: ",
       "mission_title": "Mission: Customer Crisis",
       "mission_image": "customercrisis",
       "workshop_image": "customercrisis",
-      "mission_description": "Your company has just released a new product, but something has gone terribly wrong. Can you resolve the customer complaints before time is up?",
-      "workshop_description": "Describe industries, products, customers, and general business terms. Learn communication strategies for your upcoming Mission."
+      "mission_description": "Your company has just released a new product, but something has gone terribly wrong. Can you resolve the customer complaints before time is up? (55 minutes)",
+      "workshop_description": "Describe common customer issues and solutions. Learn strategies for customer communication and disagreements. (45 minutes)"
     },
     {
       "week_number": "Week 4: ",
       "mission_title": "Mission: The Business Plan",
       "mission_image": "businessplan",
       "workshop_image": "businessplan",
-      "mission_description": "You and your teammates want to start a company, but you all have different ideas. Can you reach an agreement and present your final business plan?",
-      "workshop_description": "Describe industries, products, customers, and general business terms. Learn communication strategies for your upcoming Mission."
+      "mission_description": "You and your teammates want to start a company, but you all have different ideas. Can you reach an agreement and present your final business plan? (55 minutes)",
+      "workshop_description": "Use the vocabulary you have learned to brainstorm ideas for new company. Learn how to describe parts of a business plan and prepare a business pitch. (45 minutes)"
     }
   ]
 }

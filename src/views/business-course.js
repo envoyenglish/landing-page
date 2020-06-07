@@ -181,7 +181,7 @@ class BusinessCommunicationCourse extends Component {
               <div>
                 <h4>{week.week_number}{messages.workshop}</h4>
                 <hr/>
-                {week.workshop_description} (45 minutes)
+                {week.workshop_description}
               </div>
             </ClassSection>
             <ClassSection>
@@ -191,7 +191,7 @@ class BusinessCommunicationCourse extends Component {
               <div>
               <h4>{week.mission_title}</h4>
                 <hr/>
-                {week.mission_description} (55 minutes)
+                {week.mission_description}
               </div>
             </ClassSection>
           </WeekBlock>
