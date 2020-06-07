@@ -96,7 +96,10 @@ class BusinessCommunicationCourse extends Component {
               <Circle className="circle">A2</Circle>
               <LevelDescription>
                 <p style={{'fontWeight': '600', 'fontFamily': 'Exo, sans-serif'}}>{messages.dates}</p> 
-                <p>{messages.days}<Chip>8AM CDMX</Chip></p>
+                <div className="class-times">
+                  <span>{messages.days}</span>
+                  <Chip>8AM CDMX</Chip>
+                </div>
               </LevelDescription>
             </div>
               <HashLink to="/business-communication-course/#payment-form">
@@ -109,7 +112,10 @@ class BusinessCommunicationCourse extends Component {
               <Circle className="circle">A2</Circle>
               <LevelDescription>
                 <p style={{'fontWeight': '600', 'fontFamily': 'Exo, sans-serif'}}>{messages.dates}</p> 
-                <p>{messages.days}<Chip>5PM CDMX</Chip></p>
+                <div className="class-times">
+                  <span>{messages.days}</span>
+                  <Chip>5PM CDMX</Chip>
+                </div>
               </LevelDescription>
             </div>
               <HashLink to="/business-communication-course/#payment-form">
@@ -122,7 +128,10 @@ class BusinessCommunicationCourse extends Component {
               <Circle className="circle">B1+</Circle>
               <LevelDescription>
                 <p style={{'fontWeight': '600', 'fontFamily': 'Exo, sans-serif'}}>{messages.dates}</p> 
-                <p>{messages.days}<Chip>7PM CDMX</Chip></p>
+                <div className="class-times">
+                  <span>{messages.days}</span>
+                  <Chip>7PM CDMX</Chip>
+                </div>
               </LevelDescription>
             </div>
             <HashLink to="/business-communication-course/#payment-form">

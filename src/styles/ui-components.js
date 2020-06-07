@@ -133,6 +133,18 @@ export const Tube = styled.div`
 export const LevelDescription = styled.div`
   text-align: left;
   padding-left: 2em;
+
+  @media only screen and (max-width: 425px) {
+    .class-times {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+    }
+
+    span {
+      margin-left: 0;
+    }
+  }
 `;
 
 export const Circle = styled.div`
