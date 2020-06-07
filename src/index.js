@@ -11,7 +11,6 @@ import PartyMissionBriefing from './views/party-mission-briefing';
 import TravelMissionBriefing from './views/travel-mission-briefing';
 import FreeClassCode from './views/free-class-code';
 import BusinessProgram from './views/business';
-import Missions from './views/missions';
 import Apply from './views/apply';
 import PricingTable from './views/pricing';
 import FeedbackForm from './views/feedback';
@@ -33,7 +32,6 @@ ReactDOM.render(
     <Switch>
       <Route exact path='/' component={App}/>
       <Route path='/free-trial' component={SignupWidget}/>
-      <Route path='/missions' component={Missions}/>
       <Route path='/trial-mission-briefing' component={TrialMissionBriefing}/>
       <Route path='/party-mission-briefing' component={PartyMissionBriefing}/>
       <Route path='/travel-mission-briefing' component={TravelMissionBriefing}/>

@@ -82,10 +82,10 @@
     "header": "Contact Us"
   },
   "Application": {
-    "header": "Join a Free Trial Class",
+    "header": "Register for a Free Trial Class",
     "tagline": "Envoy English Training Mission (30 minutes)",
     "description_1": "We are currently accepting applications for our Beta trial. To participate, please fill out the form below. This form will allow us to identify your English level and recommend Missions that are most suitable to you.",
-    "description_2": "Find Your Level. Join a Mission. Get Started!",
+    "description_2": "Find Your Level. Join a Mission. Get Started! Apply now.",
     "application_title": "Application for English Classes",
     "deadline": "Now accepting beta applications"
   },
@@ -98,10 +98,12 @@
     "or": "OR" 
   },
   "FreeTrial": {
-    "header": "Welcome to the Beta Program! ",
-    "tagline": "Sign up for your First Class",
+    "header": "Registration Complete",
+    "tagline": "Sign up for your First Class Now",
     "description": "Practice your English in an Envoy Training Mission, and learn how to succeed in Envoy English. Get personalized feedback on your current English level and tips on how to improve.",
-    "button": "Sign Up Now"
+    "button": "Sign Up Now",
+    "contact": "Contact Us for Additional Class Times",
+    "contact_description": "Are there no class times that suit your schedule? Contact us to request a custom class time."
   },
   "FreeClassCode": {
     "header": "Get your FREE Class Code",

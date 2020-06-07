@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
-import {Container, Row} from '../styles/layout';
+import {Container, Row, ColoredContainer} from '../styles/layout';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import SimplybookWidget from '../components/simplybookwidget';
+import EmailForm from '../components/email-form';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
@@ -53,6 +54,13 @@ class SignupWidget extends Component {
       </Row>
       </Container>
       <Container id="booking-container"/>
+      <ColoredContainer>
+        <h1>{messages.FreeTrial.contact}</h1>
+        <Row>{messages.FreeTrial.contact_description}</Row>
+        <Row>
+          <EmailForm url={'https://services.cognitoforms.com/f/neg3yezHME-sqGKAznf3rA?id=43'}/>
+        </Row>
+      </ColoredContainer>
       <Footer header={messages.Contact.header}/>
       </>
     );

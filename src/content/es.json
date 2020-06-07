@@ -101,7 +101,9 @@
     "header": "¡Bienvenido al programa beta!",
     "tagline": "Inscríbete en tu primera Misión",
     "description": "Practica tu inglés en una Misión de capacitación, y aprende cómo tener éxito en nuestras clases. Después de la clase, recibirás retroalimentación personalizada sobre tu nivel de inglés actual y consejos sobre cómo mejorar.",
-    "button": "Inscríbete ahora"
+    "button": "Inscríbete ahora",
+    "contact": "Contact Us for Additional Class Times",
+    "contact_description": "Are there no class times that suit your schedule? Contact us to request a custom class time."
   },
   "FreeClassCode": {
     "header": "Consigue tu código para clases GRATIS",
