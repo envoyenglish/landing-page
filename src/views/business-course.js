@@ -83,11 +83,11 @@ class BusinessCommunicationCourse extends Component {
           <WhiteCell style={{marginLeft: '20px'}}>
             <h4 style={{color: secondary}}>{messages.course_information}</h4>
             <ul>
-              <li><span style={{fontWeight: '800', fontFamily: 'Exo'}}>Total Duration: </span>4 weeks</li>
-              <li><span style={{fontWeight: '800', fontFamily: 'Exo'}}>Total Classes: </span>8 classes</li>
-              <li><span style={{fontWeight: '800', fontFamily: 'Exo'}}>Available Levels: </span>{messages.levels}</li>
-              <li><span style={{fontWeight: '800', fontFamily: 'Exo'}}>Class Size: </span>{messages.class_size}</li>
-              <li><span style={{fontWeight: '800', fontFamily: 'Exo'}}>Price: </span>{messages.price}</li>
+              <li><span style={{fontWeight: '800', fontFamily: 'Exo'}}>{messages.total_duration}</span>4 weeks</li>
+              <li><span style={{fontWeight: '800', fontFamily: 'Exo'}}>{messages.total_classes} </span>8 classes</li>
+              <li><span style={{fontWeight: '800', fontFamily: 'Exo'}}>{messages.available_levels}</span>{messages.levels}</li>
+              <li><span style={{fontWeight: '800', fontFamily: 'Exo'}}>{messages.class_size_title}</span>{messages.class_size}</li>
+              <li><span style={{fontWeight: '800', fontFamily: 'Exo'}}>{messages.price_title}</span>{messages.price}</li>
             </ul>
           </WhiteCell>
         </Row>

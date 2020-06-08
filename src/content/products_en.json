@@ -21,6 +21,11 @@
   "class_size": "3-6 students",
   "price": "$2,200 MXN",
   "curriculum": "Curriculum",
+  "total_duration": "Total Duration: ",
+  "total_classes": "Total Classes: ",
+  "available_levels": "Available Levels: ",
+  "class_size_title": "Class Size: ",
+  "price_title": "Price: ",
   "weeks": [
     {
       "week_number": "Week 1: ",

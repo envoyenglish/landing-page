@@ -21,6 +21,11 @@
   "class_size": "3-6 estudiantes",
   "price": "$2,200 MXN",
   "curriculum": "Plan de estudios",
+  "total_duration": "Duración total: ",
+  "total_classes": "Clases totales: ",
+  "available_levels": "Niveles disponibles: ",
+  "class_size_title": "Tamaño de las clases: ",
+  "price_title": "Precio: ",
   "weeks": [
     {
       "week_number": "Semana #1: ",
