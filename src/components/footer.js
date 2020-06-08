@@ -14,7 +14,7 @@ class Footer extends Component {
         <p><span><FontAwesomeIcon color='white' size="1x" icon={faPhoneAlt}/></span>  <a href="https://wa.me/5215584219934" className="contact-link">+52 55 8421 9934 (Whatsapp)</a></p>
         <p><span><FontAwesomeIcon color='white' size="1x" icon={faEnvelope}/></span>  <a href="mailto:hello@envoyenglish.com" className="contact-link">hello@envoyenglish.com</a></p>
         <br/>
-        <p style={{fontSize: '12px'}}>©️ 2020 Envoy English. All Rights Reserved.  Agave Commerce, LLC.</p>
+        <p style={{fontSize: '12px'}}>©️ 2020 Envoy English. All Rights Reserved.  Envoy Education, Inc.</p>
       </StyledFooter>
     );
   }
