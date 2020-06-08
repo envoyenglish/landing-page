@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import {HashLink} from 'react-router-hash-link';
 import Footer from '../components/footer';
 import Header from '../components/header';
+import Reviews from '../components/reviews';
 
 //styles
 import {Container, ColoredContainer, Row, Cell, Grid} from '../styles/layout';
@@ -106,7 +107,8 @@ class LandingPage2 extends Component {
       </Container>
       <ColoredContainer secondary>
         <h1>{messages.Results.header}</h1>
-        <blockquote style={{fontStyle: 'italic', fontSize: '1.5em', textAlign: 'center', margin: '10px', marginBottom: '0'}}>{messages.Results.description}</blockquote>
+        <blockquote style={{fontSize: '1.2em', textAlign: 'center', fontWeight: '600', margin: '5px', marginBottom: '0'}}>{messages.Results.description}</blockquote>
+        <Reviews/>
       </ColoredContainer>
       <Container>
         <h1>{messages.UpcomingMissions.header}</h1>

@@ -4,7 +4,10 @@ import {StyledPaymentForm} from '../styles/ui-components';
 import {Button, Circle, LevelDescription, Tube, Chip} from '../styles/ui-components';
 import {HashLink} from 'react-router-hash-link';
 import Header from '../components/header';
+import Reviews from '../components/reviews';
 import {secondary} from '../styles/colors';
+import "./../App.css";
+import Slider from "react-slick";
 
 //content
 import EN from '../content/products_en.json';
@@ -207,9 +210,10 @@ class BusinessCommunicationCourse extends Component {
         })
       }   
       </Container>
-      {/* <ColoredContainer secondary>
+      <ColoredContainer secondary>
         <h1>Reviews</h1>
-      </ColoredContainer> */}
+        <Reviews/>
+      </ColoredContainer>
       <Container id="payment-form">
         <h1>{messages.register_now}</h1>
         <StyledPaymentForm 

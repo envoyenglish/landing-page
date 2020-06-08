@@ -1,6 +1,24 @@
 import styled, {css} from 'styled-components';
 import {primary, secondary} from './colors';
 
+export const StudentQuote = styled.blockquote`
+  padding: 20px;
+  width: 90% !important;
+  font-style: italic;
+  font-size: 1.5em;
+
+  p {
+    font-style: normal;
+    text-transform: uppercase;
+    text-align: right;
+    padding-right: 5%;
+  }
+
+  @media only screen and (max-width: 425px) {
+    font-size: 1em;
+  }
+`;
+
 export const ApplicationDeadline = styled.div`
   font-size: .8em;
   text-transform: capitalize;

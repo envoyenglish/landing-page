@@ -13,6 +13,7 @@ import FreeClassCode from './views/free-class-code';
 import BusinessProgram from './views/business';
 import Apply from './views/apply';
 import PricingTable from './views/pricing';
+import Reviews from './components/reviews';
 import FeedbackForm from './views/feedback';
 import BusinessCommunicationCourse from './views/business-course';
 
@@ -41,6 +42,7 @@ ReactDOM.render(
       <Route path='/register' component={Apply}/>
       <Route path='/business' component={BusinessProgram}/>
       <Route path='/feedback' component={FeedbackForm}/>
+      <Route path='/reviews' component={Reviews}/>
       <Route path='/business-communication-course' component={BusinessCommunicationCourse}/>
       <Redirect to='/'/>
     </Switch>

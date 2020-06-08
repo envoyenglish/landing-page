@@ -41,9 +41,13 @@ export const ColoredContainer = styled(Container)`
     padding-right: 20%;
 
     @media only screen and (max-width: 768px) {
-      padding-left: 5%;
-      padding-right: 5%;
+      padding-left: 10%;
+      padding-right: 10%;
       padding-bottom: 10%;
+
+      .blockquote {
+        font-size: 1em;
+      }
     }
   `}
 `;
