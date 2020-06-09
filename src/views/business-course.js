@@ -211,7 +211,7 @@ class BusinessCommunicationCourse extends Component {
       }   
       </Container>
       <ColoredContainer secondary>
-        <h1>Reviews</h1>
+        <h1>{messages.Reviews}</h1>
         <Reviews/>
       </ColoredContainer>
       <Container id="payment-form">
