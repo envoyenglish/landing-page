@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import {Container, PricingCard, Row} from '../styles/layout';
 import {Link} from 'react-router-dom';
 import {Button} from '../styles/ui-components';
-import Header from '../components/header';
 
 //content
 import EN from '../content/en.json';

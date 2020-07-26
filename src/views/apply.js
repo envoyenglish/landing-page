@@ -1,9 +1,6 @@
 import React, {Component} from 'react';
 import {Container, Row} from '../styles/layout';
 import {StyledApplicationForm} from '../styles/ui-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
-import {HashLink} from 'react-router-hash-link';
 import Header from '../components/header';
 import Footer from '../components/footer';
 

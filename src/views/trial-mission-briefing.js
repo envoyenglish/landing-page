@@ -49,6 +49,7 @@ class TrialMissionBriefing extends Component {
           seamless='seamless'
           overflow='hidden'
           height="100%"
+          title="trial-mission-briefing"
         />
       </div>
       </>

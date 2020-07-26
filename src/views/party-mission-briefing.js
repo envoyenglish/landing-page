@@ -25,6 +25,7 @@ class PartyMissionBriefing extends Component {
           seamless='seamless'
           overflow='hidden'
           height="100%"
+          title="party-mission-briefing"
         />
       </div>
       </>

@@ -20,7 +20,7 @@ class SignUpMissions extends Component {
   }
 
   componentDidMount() {
-    const widget = new SimplybookWidget({"widget_type":"iframe","url":"https:\/\/envoyenglish.simplybook.me","theme":"dainty","theme_settings":{"timeline_show_end_time":"1","timeline_hide_unavailable":"0","sb_base_color":"#292076","secondary_color":"#e4ebf5","sb_text_color":"#a1a1a1","display_item_mode":"block","body_bg_color":"#ffffff","sb_background_image":"","dark_font_color":"#293b36","light_font_color":"#ffffff","sb_company_label_color":"#ffffff","sb_cancellation_color":"#ff7a93","hide_img_mode":"0"},"timeline":"grid_week","datepicker":"inline_datepicker","is_rtl":false,"app_config":{"predefined":{"category":"6"}}})
+    const widget = new SimplybookWidget({"widget_type":"iframe","url":"https://envoyenglish.simplybook.me","theme":"dainty","theme_settings":{"timeline_show_end_time":"1","timeline_hide_unavailable":"0","sb_base_color":"#292076","secondary_color":"#e4ebf5","sb_text_color":"#a1a1a1","display_item_mode":"block","body_bg_color":"#ffffff","sb_background_image":"","dark_font_color":"#293b36","light_font_color":"#ffffff","sb_company_label_color":"#ffffff","sb_cancellation_color":"#ff7a93","hide_img_mode":"0"},"timeline":"grid_week","datepicker":"inline_datepicker","is_rtl":false,"app_config":{"predefined":{"category":"6"}}})
     widget.displayIframe();
   }
 

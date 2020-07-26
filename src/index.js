@@ -40,6 +40,7 @@ ReactDOM.render(
       <Route path='/free-class-code' component={FreeClassCode}/>
       <Route path='/audio' component={SignupWidget}/>
       <Route path='/missions' component={SignUpMissions}/>
+      <Route path='/pricing' component={PricingTable}/>
       <Route path='/apply' component={Apply}/>
       <Route path='/register' component={Apply}/>
       <Route path='/business' component={BusinessProgram}/>

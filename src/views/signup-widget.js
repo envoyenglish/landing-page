@@ -24,7 +24,7 @@ class SignupWidget extends Component {
   }
 
   componentDidMount() {
-    const widget = new SimplybookWidget({"widget_type":"iframe","url":"https:\/\/envoyenglish.simplybook.me","theme":"dainty","theme_settings":{"timeline_show_end_time":"1","sb_base_color":"#292076","secondary_color":"#958cdb","sb_text_color":"#a1a1a1","display_item_mode":"block","body_bg_color":"#ffffff","sb_background_image":"","dark_font_color":"#363636","light_font_color":"#ffffff","sb_company_label_color":"#ffffff","sb_cancellation_color":"#ff7a93","hide_img_mode":"0"},"timeline":"modern","datepicker":"inline_datepicker","is_rtl":false,"app_config":{"predefined":{"service":"4"}}});
+    const widget = new SimplybookWidget({"widget_type":"iframe","url":"https://envoyenglish.simplybook.me","theme":"dainty","theme_settings":{"timeline_show_end_time":"1","sb_base_color":"#292076","secondary_color":"#958cdb","sb_text_color":"#a1a1a1","display_item_mode":"block","body_bg_color":"#ffffff","sb_background_image":"","dark_font_color":"#363636","light_font_color":"#ffffff","sb_company_label_color":"#ffffff","sb_cancellation_color":"#ff7a93","hide_img_mode":"0"},"timeline":"modern","datepicker":"inline_datepicker","is_rtl":false,"app_config":{"predefined":{"service":"4"}}});
     widget.displayIframe();
   }
 

@@ -51,6 +51,9 @@ SimplybookWidget.prototype.init = function () {
             case 'contact-button':
                 this.addContactButton();
                 break;
+            default:
+                this.displayIframe();
+                break;
         }
     }
 };
@@ -90,6 +93,9 @@ SimplybookWidget.prototype.onReceiveMessage = function (message) {
                 if (this.options.widget_type === 'iframe') {
                     this.scrollToContent(message.data.content_position);
                 }
+                break;
+            default:
+                this.setSettings(message.data);
                 break;
         }
     }
@@ -173,7 +179,7 @@ SimplybookWidget.prototype.updatePositionAfterModal = function (listenerId) {
 
 SimplybookWidget.prototype.getUrl = function () {
     var widget_type = this.options.widget_type;
-    if (widget_type == 'contact-button') {
+    if (widget_type === 'contact-button') {
         widget_type = 'button';
     }
 
@@ -339,9 +345,9 @@ SimplybookWidget.prototype.showOverlay = function () {
         this.overlay = document.createElement('div');
         this.overlay.className = 'simplybook-widget-overlay';
 
-        var instance = this;
+        var thisInstance = this;
         this.overlay.addEventListener('click', function () {
-            instance.closePopup();
+            thisInstance.closePopup();
         });
     }
 
@@ -379,7 +385,7 @@ SimplybookWidget.prototype.getIframeNode = function () {
         this.frame = document.createElement('iframe');
         this.frame.border = '0';
         this.frame.frameBorder = '0';
-        if (this.options.widget_type == 'iframe') {
+        if (this.options.widget_type === 'iframe') {
             this.frame.scrolling = 'no';
         }
         this.frame.name = this.name;

@@ -25,6 +25,7 @@ class TravelMissionBriefing extends Component {
           seamless='seamless'
           overflow='hidden'
           height="100%"
+          title="travel-mission-briefing"
         />
       </div>
       </>

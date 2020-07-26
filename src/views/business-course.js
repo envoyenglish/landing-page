@@ -7,7 +7,6 @@ import Header from '../components/header';
 import Reviews from '../components/reviews';
 import {secondary} from '../styles/colors';
 import "./../App.css";
-import Slider from "react-slick";
 
 //content
 import EN from '../content/products_en.json';
@@ -156,7 +155,7 @@ class BusinessCommunicationCourse extends Component {
             return <WeekBlock key={i}>
             <ClassSection>
               <div style={{padding: '5%', textAlign: 'center'}}>
-                <img src={workshopSrc.toString()} width="90%"/>
+                <img src={workshopSrc.toString()} alt="workshop" width="90%"/>
               </div>
               <div>
                 <h4>{week.week_number}{messages.workshop}</h4>
@@ -166,7 +165,7 @@ class BusinessCommunicationCourse extends Component {
             </ClassSection>
             <ClassSection>
               <div style={{padding: '5%', textAlign: 'center'}}>
-                <img src={imgSrc.toString()} width="90%"/>
+                <img src={imgSrc.toString()} alt="workshop" width="90%"/>
               </div>
               <div>
               <h4>{week.mission_title}</h4>
