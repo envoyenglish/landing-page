@@ -93,40 +93,8 @@ class BusinessCommunicationCourse extends Component {
         </Row>
 
         {/* Class Schedule */}
-
-          <Tube style={{justifyContent: 'space-between'}}>
-            <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>              
-              <Circle className="circle">A2</Circle>
-              <LevelDescription>
-                <p style={{'fontWeight': '600', 'fontFamily': 'Exo, sans-serif'}}>{messages.dates}</p> 
-                <div className="class-times">
-                  <span>{messages.days}</span>
-                  <Chip>8AM CDMX</Chip>
-                </div>
-              </LevelDescription>
-            </div>
-              <HashLink to="/business-communication-course/#payment-form">
-                <Button primary>{messages.register}</Button>
-              </HashLink>
-          </Tube>
-
-          <Tube style={{justifyContent: 'space-between'}}>
-            <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>              
-              <Circle className="circle">A2</Circle>
-              <LevelDescription>
-                <p style={{'fontWeight': '600', 'fontFamily': 'Exo, sans-serif'}}>{messages.dates}</p> 
-                <div className="class-times">
-                  <span>{messages.days}</span>
-                  <Chip>5PM CDMX</Chip>
-                </div>
-              </LevelDescription>
-            </div>
-              <HashLink to="/business-communication-course/#payment-form">
-                <Button primary>{messages.register}</Button>
-              </HashLink>
-          </Tube>
-
-          <Tube style={{justifyContent: 'space-between'}}>
+          <h4 style={{textAlign: 'left'}}>Upcoming Courses</h4>
+          <Tube style={{justifyContent: 'space-between', marginBottom: '2em'}}>
             <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>              
               <Circle className="circle">B1+</Circle>
               <LevelDescription>
