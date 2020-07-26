@@ -6,6 +6,7 @@ import * as serviceWorker from './serviceWorker';
 import { BrowserRouter, useLocation, Route, Redirect, Switch } from 'react-router-dom';
 import {useEffect} from 'react';
 import SignupWidget from './views/signup-widget';
+import SignUpMissions from './views/signup-missions';
 import TrialMissionBriefing from './views/trial-mission-briefing';
 import PartyMissionBriefing from './views/party-mission-briefing';
 import TravelMissionBriefing from './views/travel-mission-briefing';
@@ -38,6 +39,7 @@ ReactDOM.render(
       <Route path='/travel-mission-briefing' component={TravelMissionBriefing}/>
       <Route path='/free-class-code' component={FreeClassCode}/>
       <Route path='/audio' component={SignupWidget}/>
+      <Route path='/missions' component={SignUpMissions}/>
       <Route path='/apply' component={Apply}/>
       <Route path='/register' component={Apply}/>
       <Route path='/business' component={BusinessProgram}/>
