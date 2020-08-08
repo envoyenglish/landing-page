@@ -55,6 +55,16 @@ export const Button = styled.button`
     color: white;
   }
 
+  ${props => props.white && css`
+    color: white;
+    border: white solid 2px;
+
+    :hover {
+      background: white;
+      color: ${primary};
+    }
+  `}
+
   ${props => props.primary && css`
     background: ${primary};
     color: white;
@@ -98,6 +108,10 @@ export const NavbarButtons = styled.div`
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
+
+  #register {
+    margin-left: 15%;
+  }
 
   @media only screen and (min-width: 425px) and (max-width: 600px) {
     #register {
@@ -167,7 +181,7 @@ export const LevelDescription = styled.div`
 
 export const Circle = styled.div`
   border: ${primary} 6px solid;
-  border-radius: 45px;
+  border-radius: 50%;
   padding: 2px;
   min-width: 2em;
   min-height: auto;

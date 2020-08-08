@@ -13,10 +13,6 @@ import {Button, Circle, LevelDescription, Tube, Chip} from '../styles/ui-compone
 import EN from '../content/en.json';
 import ES from '../content/es.json';
 
-//images - Missions
-import annualevent from '../assets/annualevent_business.png';
-import finaldestination from '../assets/finaldestination_business.png';
-import hiringgame from '../assets/hiringgame_business.png';
 
 //images - How it Works
 import ScheduleClass from '../assets/ScheduleClass.png';
@@ -48,7 +44,7 @@ class LandingPage2 extends Component {
 
   render() {
     const {messages} = this.state;
-    const missionExamples = messages.Missions;
+    const courses = messages.Courses;
     const Levels = messages.Levels;
 
     return (
@@ -66,10 +62,10 @@ class LandingPage2 extends Component {
           <p className="hero-description">{messages.Hero.description}</p>
         </Row>
         <Row id="course-offer">
-          <Chip>NEW!</Chip><Link style={{textAlign: 'left', paddingLeft: '8px'}} to='/business-communication-course'><span>{messages.Hero.course_offer}</span></Link>
+          <Chip>NEW!</Chip><HashLink style={{textAlign: 'left', paddingLeft: '8px'}} to='/#courses'><span>{messages.Hero.course_offer}</span></HashLink>
         </Row>
         <Row>
-          <HashLink to="/#how-it-works"><Button>{messages.Hero.button_1}</Button></HashLink>
+          <HashLink to="/#courses"><Button>{messages.Hero.button_1}</Button></HashLink>
           <Link to='/register'><Button primary>{messages.Hero.button_2}</Button></Link>
         </Row>
       </Container>
@@ -110,39 +106,24 @@ class LandingPage2 extends Component {
         <blockquote style={{fontSize: '1.2em', textAlign: 'center', fontWeight: '600', margin: '5px', marginBottom: '0'}}>{messages.Results.description}</blockquote>
         <Reviews/>
       </ColoredContainer>
-      <Container>
-        <h1>{messages.UpcomingMissions.header}</h1>
+      <Container id="courses">
+        <h1>{messages.UpcomingCourses.header}</h1>
         <Row>
           <p>
-            {messages.UpcomingMissions.description}
+            {messages.UpcomingCourses.description}
           </p>
         </Row>
         <Grid>
         {
-          missionExamples.map((mission, i) => {
-            let imgSrc = annualevent;
-            switch(mission.img) {
-              case 'annualevent':
-                imgSrc = annualevent;
-                break;
-              case 'finaldestination':
-                imgSrc = finaldestination;
-                break;
-              case 'hiringgame':
-                imgSrc = hiringgame;
-                break;
-              default:
-                imgSrc = annualevent;
-                break;
-            }
-            return <Cell key={i} style={{justifyContent: 'space-evenly'}}>
+          courses.map((course, i) => {
+            return <Cell key={i} style={{justifyContent: 'space-evenly', height: 'auto'}}>
+              <Circle classame="circle" style={{width: '50px', marginBottom: '5%'}}>{course.level}</Circle>
               <div>
-                <img style={{width: '50%', borderRadius: '100%'}} src={imgSrc.toString()} alt="mission-cover"/>
-                <h4>{mission.title}</h4>
-                <h5>{mission.subtitle}</h5>
+                <h3>{course.title}</h3>
+                <h5>{course.subtitle}</h5>
               </div>
               <div>
-                <Link to='/register'><Button>{messages.Hero.button_2}</Button></Link>
+                <Link to={course.link}><Button>{messages.UpcomingCourses.button_1}</Button></Link>
               </div>
             </Cell>
           })
@@ -150,9 +131,7 @@ class LandingPage2 extends Component {
         </Grid>
       </Container>
       <ColoredContainer>
-        <h1>{messages.Curriculum.header}</h1>
-        <Row>{messages.Curriculum.description}</Row>
-        <Row><h4>{messages.Curriculum.available_levels}</h4></Row>
+        <h1 style={{paddingBottom: '2%'}}>{messages.Curriculum.header}</h1>
         <Container style={{padding: '0 5%'}}>
           {Levels.map((l, i) => {
             return <Tube key={i}>
@@ -163,6 +142,8 @@ class LandingPage2 extends Component {
               </LevelDescription>
             </Tube>
           })}
+          <Row><h4>{messages.Curriculum.description}</h4></Row>
+          <Link to='/register'><Button white>{messages.Hero.button_2}</Button></Link>
         </Container>
       </ColoredContainer>
       <Footer header={messages.Contact.header}/>

@@ -3,8 +3,8 @@
     "title": "Welcome to Envoy English",
     "tagline": "English for the Real World",
     "description": "Enough with boring language classes. Our interactive online Missions rapidly improve your English conversation skills and ability to communicate in real-life situations.",
-    "course_offer": "Register for our Business Communication Course. Spaces are limited!",
-    "button_1": "How it works",
+    "course_offer": "Register for our Communication Courses this fall. Spaces are limited!",
+    "button_1": "Sign up now",
     "button_2": "Try for free"
   },
   "MissionAccomplished": {
@@ -13,10 +13,10 @@
   },
 "HowItWorks": {
     "header": "How It Works",
-    "signup": "1. Sign up for a Class",
-    "signup_description": "Register for the program, and then schedule your classes. Study when you want, where you want.",
+    "signup": "1. Sign up for a Course",
+    "signup_description": "Register for our Business English, Business English Intensive Masterclass, or Conversation Courses today!",
     "missionbriefing": "2. Read your Mission Briefing",
-    "missionbriefing_description": "After you sign up, we will send you a Mission Briefing with all of the vocabulary and information you need to succeed.",
+    "missionbriefing_description": "Before each class, we will send you a Mission Briefing with all of the vocabulary and information you need to succeed.",
     "completemission": "3. Complete the Mission",
     "completemission_description": "Join your class on Zoom, and start practicing English in a real life scenario! All of our classes are live, online group sessions led by a native English speaking instructor.",
     "getfeedback": "4. Get Personalized Feedback",
@@ -28,7 +28,7 @@
   },
   "Curriculum": {
     "header": "Practice at Your Level",
-    "description": "Sign up for a first training Mission to find your Envoy Level. Take classes with students at your same level so that you will always be able to learn and grow.",
+    "description": "Don't know your Envoy English level? Get a free evaluation in our trial class!",
     "available_levels": "We are currently offering classes for the following language levels:"
   },
   "Levels": [
@@ -51,6 +51,31 @@
       "level": "A2",
       "title": "Pioneer",
       "description": "You can communicate to complete simple, routine tasks."
+    }
+  ],
+  "UpcomingCourses": {
+    "header": "Upcoming Courses",
+    "description": "Ready to embark on your English speaking journey? Enroll in an upcoming course this week.",
+    "button_1": "Register now"
+  },
+  "Courses": [
+    {
+      "title": "Communicate like a Boss",
+      "subtitle": "Intensive Masterclass for business professionals",
+      "level": "B2",
+      "link": "/business-english-masterclass-intensive"
+    },
+    {
+      "title": "Business Communication Course",
+      "subtitle": "Improve your English in a professional setting",
+      "level": "B1",
+      "link": "/business-communication-course"
+    },
+    {
+      "title": "Communicate with Confidnace",
+      "subtitle": "Boost your communication skills in every day situations",
+      "level": "A2",
+      "link": "/discussion-course-a2"
     }
   ],
   "UpcomingMissions": {

@@ -1,0 +1,46 @@
+{
+  "title": "Envoy English Conversation Course",
+  "tagline": "Let's Talk!",
+  "description": "Increase your confidence in English with this weekly conversation course.",
+  "register_now": "Register Now",
+  "register": "Register",
+  "course_overview": "Course Overview",
+  "course_description": "The best way to improve your ability to speak is to practice! Learn vocabulary about daily topics, and practice using them in this conversation course. You might share your opinions and ideas, discuss options, give feedback, and even have a debate! We create a fun, safe environment so you don't need to be afraid to make mistakes.",
+  "dates": "August 31 - September 21st",
+  "days": "Mondays",
+  "levels": "Pioneer (A2)",
+  "class_size": "3-6 students",
+  "price": "$1,199 MXN",
+  "curriculum": "Curriculum",
+  "total_classes": "Total Classes: ",
+  "available_levels": "Available Levels: ",
+  "class_size_title": "Class Size: ",
+  "price_title": "Price: ",
+  "Reviews": "Reviews",
+  "weeks": [
+    {
+      "week_number": "Week 1",
+      "mission_title": "Day in the Life",
+      "mission_image": "https://document-export.canva.com/DAEEJ0ZGe4M/19/thumbnail/0001-9330034062.png",
+      "mission_description": "What is a typical day like for you? What does your perfect day look like?"
+    },
+    {
+      "week_number": "Week 2",
+      "mission_title": "Family Time",
+      "mission_image": "https://document-export.canva.com/DAEEJ1s8E6A/10/thumbnail/0001-9330466408.png",
+      "mission_description": "How often do you see your family? What are your favorite family activities?"
+    },
+    {
+      "week_number": "Week 3",
+      "mission_title": "Favorite Foods",
+      "mission_image": "https://document-export.canva.com/DAEEJ7jt5M0/14/thumbnail/0001-9330466663.png",
+      "mission_description": "What is your favorite food? Why? What is your least favorite food?"
+    },
+    {
+      "week_number": "Week 4",
+      "mission_title": "Dream Job",
+      "mission_image": "https://document-export.canva.com/DAEEJ5u5j8s/16/thumbnail/0001-9330466924.png",
+      "mission_description": "What is your current job like? What would your dream job be?"
+    }
+  ]
+}

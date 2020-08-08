@@ -145,6 +145,34 @@ export const WhiteCell = styled.div`
   }
 `;
 
+export const WhiteCellCentered = styled.div`
+  box-sizing: border-box;
+  width: 50%;
+  min-width: 300px;
+  max-width: 800px;
+  fontSize: 1.2em;
+  line-height: 2;
+  border: white 4px solid;
+  padding: 20px; 
+  margin: 0 auto;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  ul {
+    padding: 0 20px;
+  }
+
+  @media only screen and (min-width: 325px) and (max-width: 768px) {
+    h3 {
+      font-weight: 800;
+      font-size: 1.2em;
+    }
+  }
+`;
+
 export const WeekBlock = styled.div`
   border: ${primary} 2px solid;
   border-left: ${primary} 20px solid;

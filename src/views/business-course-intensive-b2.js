@@ -9,8 +9,8 @@ import {secondary} from '../styles/colors';
 import "./../App.css";
 
 //content
-import EN from '../content/products_en.json';
-import ES from '../content/products_es.json';
+import EN from '../content/business_course_intensive_en.json';
+import ES from '../content/business_course_intensive_es.json';
 
 //images
 import investmentpitch from '../assets/InvestmentPitch.png';
@@ -181,14 +181,15 @@ class BusinessCommunicationCourse extends Component {
         <h1>{messages.Reviews}</h1>
         <Reviews/>
       </ColoredContainer>
-      <Container id="payment-form">
+
+      {/* <Container id="payment-form">
         <h1>{messages.register_now}</h1>
         <StyledPaymentForm 
           src="https://www.cognitoforms.com/AgaveCommerce/ClassSignUp"
           scrolling="no"
           frameBorder="0"
         />
-      </Container>
+      </Container> */}
       </>
     );
   }

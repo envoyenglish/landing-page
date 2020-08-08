@@ -1,0 +1,46 @@
+{
+  "title": "Envoy English Business Course",
+  "tagline": "Conversations in Business",
+  "description": "Practice your Business English in real-life situations like a board meeting, a job interview, and a sales call.",
+  "register_now": "Register Now",
+  "register": "Register",
+  "course_overview": "Course Overview",
+  "course_description": "Do you struggle to communicate in English at work? This course will give you the practice and confidence you need to communicate effectively. Each week we will review new business vocabulary and then apply what we’ve learned in a real-life business situation. You will practice speaking in a formal business meeting, making a sale, conducting a job interview, and more. Our online courses are designed to meet the needs of busy professionals like yourself and to give you the skills needed to excel in the global workplace.",
+  "dates": "September 2 - September 23",
+  "days": "Wednesdays",
+  "levels": "Messenger (B1)",
+  "class_size": "3-6 students",
+  "price": "$1,199 MXN",
+  "curriculum": "Curriculum",
+  "total_classes": "Total Classes: ",
+  "available_levels": "Available Levels: ",
+  "class_size_title": "Class Size: ",
+  "price_title": "Price: ",
+  "Reviews": "Reviews",
+  "weeks": [
+    {
+      "week_number": "Week 1",
+      "mission_title": "The Board Meeting",
+      "mission_image": "https://document-export.canva.com/DAEEJzyfLdQ/14/thumbnail/0001-9330060016.png",
+      "mission_description": "You are a member of your company’s board, which must reach an important decision. Can you communicate your point of view effectively to help the board make the right decision?"
+    },
+    {
+      "week_number": "Week 2",
+      "mission_title": "The Hiring Game",
+      "mission_image": "https://document-export.canva.com/DAEET-mcBgE/3/thumbnail/0001-9383534066.png",
+      "mission_description": "You are a recruiter representing a candidate for a job. Can you make your case and get your candidate hired?"
+    },
+    {
+      "week_number": "Week 3",
+      "mission_title": "The Business Event",
+      "mission_image": "https://document-export.canva.com/DAD3wrYY1GA/77/thumbnail/0001-9383416473.png",
+      "mission_description": "Your team has been tasked with planning a special event, but not everyone in the company shares the same ideas. Can you work with your team to plan a successful event?"
+    },
+    {
+      "week_number": "Week 4",
+      "mission_title": "The Big Sale",
+      "mission_image": "https://document-export.canva.com/DAEEJ-8Gp1c/5/thumbnail/0001-9330058978.png",
+      "mission_description": "You have a client interested in your product, but you are facing fierce competition. Can you convince the client to choose your solution?"
+    }
+  ]
+}

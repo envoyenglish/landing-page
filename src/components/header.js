@@ -58,7 +58,7 @@ class Header extends Component {
               </Select>
             </FormControl>
           }
-          {this.props.page === 'landing' &&
+          {/* {this.props.page === 'landing' &&
             <ApplicationDeadline>
               <Badge color="secondary" badgeContent={1} showZero style={{flexDirection: 'row-reverse', textDecoration: 'none'}}>
                 <FontAwesomeIcon color='lightgray' size="2x" icon={faEnvelope}/>
@@ -68,7 +68,7 @@ class Header extends Component {
                 </Typography>
               </Badge>
             </ApplicationDeadline>
-          }
+          } */}
         </NavbarButtons>
       </Navbar>
     );

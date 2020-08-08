@@ -16,7 +16,11 @@ import Apply from './views/apply';
 import PricingTable from './views/pricing';
 import Reviews from './components/reviews';
 import FeedbackForm from './views/feedback';
-import BusinessCommunicationCourse from './views/business-course';
+
+//courses
+import BusinessCommunicationCourseIntensiveB2 from './views/business-course-intensive-b2';
+import BusinessCommunicationCourseB1 from './views/business-course-b1';
+import CommunicationCourseA2 from './views/discussion-course-a2'
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -46,7 +50,9 @@ ReactDOM.render(
       <Route path='/business' component={BusinessProgram}/>
       <Route path='/feedback' component={FeedbackForm}/>
       <Route path='/reviews' component={Reviews}/>
-      <Route path='/business-communication-course' component={BusinessCommunicationCourse}/>
+      <Route path='/business-communication-course' component={BusinessCommunicationCourseB1}/>
+      <Route path='/business-english-masterclass-intensive' component={BusinessCommunicationCourseIntensiveB2}/>
+      <Route path='/discussion-course-a2' component={CommunicationCourseA2}/>
       <Redirect to='/'/>
     </Switch>
   </BrowserRouter>
