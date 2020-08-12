@@ -1,46 +1,46 @@
 {
-  "title": "Envoy English Business Course",
-  "tagline": "Conversations in Business",
-  "description": "Practice your Business English in real-life situations like a board meeting, a job interview, and a sales call.",
-  "register_now": "Register Now",
-  "register": "Register",
-  "course_overview": "Course Overview",
-  "course_description": "Do you struggle to communicate in English at work? This course will give you the practice and confidence you need to communicate effectively. Each week we will review new business vocabulary and then apply what we’ve learned in a real-life business situation. You will practice speaking in a formal business meeting, making a sale, conducting a job interview, and more. Our online courses are designed to meet the needs of busy professionals like yourself and to give you the skills needed to excel in the global workplace.",
-  "dates": "September 2 - September 23",
-  "days": "Wednesdays",
+  "title": "Curso de Negocios de Envoy English",
+  "tagline": "Conversaciones de Negocios",
+  "description": "Practica tu inglés empresarial en situaciones de la vida real, como una reunión de la junta, una entrevista de trabajo, y una llamada de ventas.",
+  "register_now": "Regístrate",
+  "register": "Regístrate",
+  "course_overview": "Resumen del Curso",
+  "course_description": "¿Te cuesta comunicarte en inglés en el trabajo? Este curso te brindará la práctica y la confianza que necesitas para comunicarte de manera eficaz. Cada semana revisaremos el nuevo vocabulario empresarial y luego aplicaremos lo que hemos aprendido en una situación empresarial de la vida real. Practicarás hablar en una reunión formal de negocios, realizar una venta, realizar una entrevista de trabajo y más. Nuestros cursos en línea están diseñados para satisfacer las necesidades de profesionales ocupados como tú y para brindarte las habilidades necesarias para sobresalir en el trabajo.",
+  "dates": "2 de septiembre - 23 de septiembre",
+  "days": "Los miércoles",
   "levels": "Messenger (B1)",
-  "class_size": "3-6 students",
+  "class_size": "3-6 estudiantes",
   "price": "$1,199 MXN",
-  "curriculum": "Curriculum",
-  "total_classes": "Total Classes: ",
-  "available_levels": "Available Levels: ",
-  "class_size_title": "Class Size: ",
-  "price_title": "Price: ",
-  "Reviews": "Reviews",
+  "curriculum": "Plan de estudios",
+  "total_classes": "Clases en Total: ",
+  "available_levels": "Niveles Disponibles: ",
+  "class_size_title": "Número de Estudiantes: ",
+  "price_title": "Precio: ",
+  "Reviews": "Reseñas",
   "weeks": [
     {
-      "week_number": "Week 1",
-      "mission_title": "The Board Meeting",
+      "week_number": "Semana #1",
+      "mission_title": "Reunión de la Junta",
       "mission_image": "https://document-export.canva.com/DAEEJzyfLdQ/14/thumbnail/0001-9330060016.png",
-      "mission_description": "You are a member of your company’s board, which must reach an important decision. Can you communicate your point of view effectively to help the board make the right decision?"
+      "mission_description": "Eres miembro del directorio de tu empresa, que debe tomar una decisión importante. ¿Puedes comunicar tu punto de vista de manera eficaz para ayudar al directorio a tomar la decisión correcta?"
     },
     {
-      "week_number": "Week 2",
-      "mission_title": "The Hiring Game",
+      "week_number": "Semana #2",
+      "mission_title": "El juego de la contratación",
       "mission_image": "https://document-export.canva.com/DAEET-mcBgE/3/thumbnail/0001-9383534066.png",
-      "mission_description": "You are a recruiter representing a candidate for a job. Can you make your case and get your candidate hired?"
+      "mission_description": "Eres un reclutador que representa a un candidato para una vacante. ¿Puedes presentar tu caso y conseguir que se contrate a tu candidato?"
     },
     {
-      "week_number": "Week 3",
-      "mission_title": "The Business Event",
+      "week_number": "Semana #3",
+      "mission_title": "El Evento Corporativo",
       "mission_image": "https://document-export.canva.com/DAD3wrYY1GA/77/thumbnail/0001-9383416473.png",
-      "mission_description": "Your team has been tasked with planning a special event, but not everyone in the company shares the same ideas. Can you work with your team to plan a successful event?"
+      "mission_description": "Tu equipo tiene la tarea de planificar un evento especial, pero no todos en la empresa comparten las mismas ideas. ¿Puedes trabajar con tu equipo para planificar un evento exitoso?"
     },
     {
-      "week_number": "Week 4",
-      "mission_title": "The Big Sale",
+      "week_number": "Semana #4",
+      "mission_title": "La gran venta",
       "mission_image": "https://document-export.canva.com/DAEEJ-8Gp1c/5/thumbnail/0001-9330058978.png",
-      "mission_description": "You have a client interested in your product, but you are facing fierce competition. Can you convince the client to choose your solution?"
+      "mission_description": "Tienes un cliente interesado en tu producto, pero te enfrentas a una competencia feroz. ¿Puedes convencer al cliente de que elija tu solución?"
     }
   ]
 }

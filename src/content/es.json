@@ -28,7 +28,7 @@
   },
   "Curriculum": {
     "header": "Practica a tu nivel",
-    "description": "Don't know your Envoy English level? Get a free evaluation in our trial class!",
+    "description": "¿No conoces tu nivel de inglés? ¡Obtén una evaluación gratuita durante tu clase de prueba!",
     "available_levels": "Actualmente estamos ofreciendo clases para los siguientes niveles de inglés:"
   },
   "Levels": [
@@ -54,26 +54,26 @@
     }
   ],
   "UpcomingCourses": {
-    "header": "Upcoming Courses",
-    "description": "Ready to embark on your English speaking journey? Enroll in an upcoming course this week.",
-    "button_1": "Register now"
+    "header": "Upcoming Courses Próximos Cursos",
+    "description": "¿Ya listo para empezar tu aventura de hablar inglés. Inscríbete en un curso esta semana.",
+    "button_1": "Regístrate"
   },
   "Courses": [
     {
       "title": "Communicate like a Boss",
-      "subtitle": "Intensive Masterclass for business professionals",
+      "subtitle": "Masterclass: Curso Intensivo de Inglés Empresarial",
       "level": "B2",
       "link": "/business-english-masterclass-intensive"
     },
     {
-      "title": "Business Communication Course",
-      "subtitle": "Improve your English in a professional setting",
+      "title": "Curso de Comunicación para Negocios",
+      "subtitle": "Mejora tu inglés para un ambiente profesional",
       "level": "B1",
       "link": "/business-communication-course"
     },
     {
-      "title": "Communicate with Confidnace",
-      "subtitle": "Boost your communication skills in every day situations",
+      "title": "Comunica con Confianza",
+      "subtitle": "Mejora tus habilidades de comunicación diaria",
       "level": "A2",
       "link": "/discussion-course-a2"
     }
