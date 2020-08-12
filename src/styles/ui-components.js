@@ -248,12 +248,13 @@ export const StyledApplicationForm = styled.iframe`
 export const StyledPaymentForm = styled.iframe`
   position: relative;
   min-width: 100%;
+  width: 1px;
   width: 100%;
-  height: 1650px;
+  height: ${p => p.height}px;
   padding-bottom: 5%;
 
   @media only screen and (max-width: 425px) {
-    height: 2300px;
+    height: 1800px;
   }
 `;
 

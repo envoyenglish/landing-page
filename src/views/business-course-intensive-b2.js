@@ -182,14 +182,17 @@ class BusinessCommunicationCourse extends Component {
         <Reviews/>
       </ColoredContainer>
 
-      {/* <Container id="payment-form">
+      <Container id="payment-form">
         <h1>{messages.register_now}</h1>
         <StyledPaymentForm 
-          src="https://www.cognitoforms.com/AgaveCommerce/ClassSignUp"
+          src="https://www.cognitoforms.com/f/neg3yezHME-sqGKAznf3rA?id=46"
           scrolling="no"
           frameBorder="0"
+          height="1289"
+          seamless="seamless"
         />
-      </Container> */}
+      </Container>
+
       </>
     );
   }
