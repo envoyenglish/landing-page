@@ -1,13 +1,7 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import {Logo, Navbar, Button, NavbarButtons, ApplicationDeadline, Chip} from '../styles/ui-components';
+import {Logo, Navbar, Button, NavbarButtons} from '../styles/ui-components';
 import logo from '../assets/logo.png';
-import Badge from '@material-ui/core/Badge';
-
-//icons
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import Typography from '@material-ui/core/Typography';
 
 //material
 import MenuItem from '@material-ui/core/MenuItem';
@@ -58,17 +52,6 @@ class Header extends Component {
               </Select>
             </FormControl>
           }
-          {/* {this.props.page === 'landing' &&
-            <ApplicationDeadline>
-              <Badge color="secondary" badgeContent={1} showZero style={{flexDirection: 'row-reverse', textDecoration: 'none'}}>
-                <FontAwesomeIcon color='lightgray' size="2x" icon={faEnvelope}/>
-                <Typography style={{position: 'relative', top: '-10px', right: '10px', textTransform: 'none'}}>
-                  {this.props.language === 'EN' && <><Chip>NEW!</Chip><Link to='/business-communication-course'>Business Communication Course</Link></>}
-                  {this.props.language === 'ES' && <><Chip>¡NUEVO!</Chip><Link to='/business-communication-course'>¡Únete a un curso de negocios!</Link></>}
-                </Typography>
-              </Badge>
-            </ApplicationDeadline>
-          } */}
         </NavbarButtons>
       </Navbar>
     );
