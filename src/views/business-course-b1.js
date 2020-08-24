@@ -3,6 +3,7 @@ import {Container, Row, ColoredContainer, Cell, Grid, WhiteCellCentered} from '.
 import {StyledPaymentForm} from '../styles/ui-components';
 import {Button, Circle, LevelDescription, Tube, Chip} from '../styles/ui-components';
 import {HashLink} from 'react-router-hash-link';
+import {Link} from 'react-router-dom';
 import Header from '../components/header';
 import Reviews from '../components/reviews';
 import "./../App.css";
@@ -110,6 +111,12 @@ class BusinessCommunicationCourseB1 extends Component {
       <ColoredContainer secondary>
         <h1>{messages.Reviews}</h1>
         <Reviews/>
+      </ColoredContainer>
+
+      <ColoredContainer style={{paddingBottom: '5%'}}>
+        <h1>{messages.FreeTrial.header}</h1>
+        <h4>{messages.FreeTrial.description}</h4>
+        <Link to='/register'><Button white>{messages.FreeTrial.button}</Button></Link>
       </ColoredContainer>
 
       <Container id="payment-form">

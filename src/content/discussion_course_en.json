@@ -2,7 +2,7 @@
   "title": "Envoy English Conversation Course",
   "tagline": "Let's Talk!",
   "description": "Increase your confidence in English with this weekly conversation course.",
-  "register_now": "Register Now",
+  "register_now": "Course Registration",
   "register": "Register",
   "course_overview": "Course Overview",
   "course_description": "The best way to improve your ability to speak is to practice! Learn vocabulary about daily topics, and practice using them in this conversation course. You might share your opinions and ideas, discuss options, give feedback, and even have a debate! We create a fun, safe environment so you don't need to be afraid to make mistakes.",
@@ -17,6 +17,11 @@
   "class_size_title": "Class Size: ",
   "price_title": "Price: ",
   "Reviews": "Reviews",
+  "FreeTrial": {
+    "header": "Register for a Free Trial Class",
+    "description": "Don't know your Envoy English level? Get a free evaluation in our trial class!",
+    "button": "Sign Up Now"
+  },
   "weeks": [
     {
       "week_number": "Week 1",

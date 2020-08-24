@@ -27,6 +27,11 @@
   "class_size_title": "Número de Estudiantes: ",
   "price_title": "Precio: ",
   "Reviews": "Reseñas",
+  "FreeTrial": {
+    "header": "Regístrate para una clase de prueba gratis",
+    "description": "¿No conoces tu nivel de inglés? ¡Obtén una evaluación gratuita durante tu clase de prueba!",
+    "button": "Inscríbete"
+  },
   "weeks": [
     {
       "week_number": "Semana #1: ",
