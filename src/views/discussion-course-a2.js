@@ -19,16 +19,12 @@ class CommunicationCourseA2 extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      language: 'EN',
-      messages: EN
+      messages: translations.ES
     }
-    this.handleChange = this.handleChange.bind(this);
   }
 
-  handleChange(event) {
-    const lang = event.target.value;
-    this.setState({language: lang});
-    this.setState({messages: translations[lang]});
+  componentDidMount() {
+    this.setState({messages: translations[this.props.language]});
   }
 
   render() {
@@ -36,13 +32,7 @@ class CommunicationCourseA2 extends Component {
     const weeks = messages.weeks;
 
     return (
-      <>
-      <Header 
-        handleChange={(e) => this.handleChange(e)}
-        language={this.state.language}
-        buttonText={messages.tryforfree}
-      />
-      
+      <>      
       <Container>
         <h1>{messages.title}</h1>
         <h2>{messages.tagline}</h2>

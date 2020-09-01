@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import {HashLink} from 'react-router-hash-link';
 import Footer from '../components/footer';
-import Header from '../components/header';
 import Reviews from '../components/reviews';
 
 //styles
@@ -12,7 +11,6 @@ import {Button, Circle, LevelDescription, Tube, Chip} from '../styles/ui-compone
 //content
 import EN from '../content/en.json';
 import ES from '../content/es.json';
-
 
 //images - How it Works
 import ScheduleClass from '../assets/ScheduleClass.png';
@@ -30,16 +28,12 @@ class LandingPage2 extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      language: 'EN',
-      messages: EN
+      messages: translations.ES
     }
-    this.handleChange = this.handleChange.bind(this);
   }
 
-  handleChange(event) {
-    const lang = event.target.value;
-    this.setState({language: lang});
-    this.setState({messages: translations[lang]});
+  componentDidMount() {
+    this.setState({messages: translations[this.props.language]});
   }
 
   render() {
@@ -49,12 +43,6 @@ class LandingPage2 extends Component {
 
     return (
       <>
-      <Header
-        page = {'landing'} 
-        handleChange={(e) => this.handleChange(e)}
-        buttonText={messages.Hero.button_2}
-        language={this.state.language}
-      />
       <Container hero>
         <h1>{messages.Hero.title}</h1>
         <h2>{messages.Hero.tagline}</h2>

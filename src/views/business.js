@@ -22,16 +22,12 @@ class BusinessProgram extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      language: 'EN',
-      messages: EN
+      messages: translations.ES
     }
-    this.handleChange = this.handleChange.bind(this);
   }
 
-  handleChange(event) {
-    const lang = event.target.value;
-    this.setState({language: lang});
-    this.setState({messages: translations[lang]});
+  componentDidMount() {
+    this.setState({messages: translations[this.props.language]});
   }
 
   render() {
@@ -40,11 +36,6 @@ class BusinessProgram extends Component {
 
     return (
       <>
-      <Header 
-        handleChange={(e) => this.handleChange(e)}
-        buttonText={messages.Hero.button_2}
-        language={this.state.language}
-      />
       <Container>
         <h1>{messages.Business.header}</h1>
         <h2>{messages.Business.tagline}</h2>

@@ -29,6 +29,12 @@ class Header extends Component {
   }
 
   render() {
+    let buttonText = 'Prueba gratis';
+    if (this.props.language === 'EN') {
+      buttonText = 'Try for free';
+    } else {
+      buttonText = 'Prueba gratis';
+    }
 
     return (
       <Navbar className = {this.props.className}>
@@ -45,7 +51,7 @@ class Header extends Component {
           </HamburgerMenu>
         <NavbarButtons>
           {this.props.page !== 'free-trial' &&
-            <Link to='/register'><Button primary id="register">{this.props.buttonText}</Button></Link>
+            <Link to='/register'><Button primary id="register">{buttonText}</Button></Link>
           }
           {this.props.page === 'briefing' &&
             <a target='_blank' rel='noopener noreferrer' href={this.props.pdf}>
@@ -54,14 +60,15 @@ class Header extends Component {
               </Button>
             </a>
           }
-          {this.props.handleChange && 
-            <FormControl variant="outlined">
-              <Select style={{width: '70px'}} value={this.props.language} onChange={(e) => this.props.handleChange(e)}>
-                <MenuItem value={'EN'}>EN</MenuItem>
-                <MenuItem value={'ES'}>ES</MenuItem>
-              </Select>
-            </FormControl>
-          }
+          <FormControl variant="outlined">
+            <Select style={{width: '70px'}}
+              value={this.props.language}
+              onChange={(e) => this.props.handleSetLanguage(e.target.value)}
+            >
+              <MenuItem value={'EN'}>EN</MenuItem>
+              <MenuItem value={'ES'}>ES</MenuItem>
+            </Select>
+          </FormControl>
         </NavbarButtons>
       </Navbar>
     );

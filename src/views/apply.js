@@ -15,16 +15,12 @@ class Application extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      language: 'EN',
-      messages: EN
+      messages: translations.ES
     }
-    this.handleChange = this.handleChange.bind(this);
   }
 
-  handleChange(event) {
-    const lang = event.target.value;
-    this.setState({language: lang});
-    this.setState({messages: translations[lang]});
+  componentDidMount() {
+    this.setState({messages: translations[this.props.language]});
   }
 
   render() {
@@ -32,12 +28,6 @@ class Application extends Component {
 
     return (
       <>
-      <Header 
-        page = {'free-trial'}
-        handleChange={(e) => this.handleChange(e)}
-        buttonText={messages.Hero.button_2}
-        language={this.state.language}
-      />
       <Container>
         <h1>{messages.Application.header}</h1>
         <h2>{messages.Application.tagline}</h2>
