@@ -33,7 +33,7 @@ class Application extends Component {
     return (
       <>
       <Header 
-        page = {'apply'}
+        page = {'free-trial'}
         handleChange={(e) => this.handleChange(e)}
         buttonText={messages.Hero.button_2}
         language={this.state.language}

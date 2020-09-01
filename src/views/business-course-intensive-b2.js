@@ -52,6 +52,7 @@ class BusinessCommunicationCourse extends Component {
       <Header 
         handleChange={(e) => this.handleChange(e)}
         language={this.state.language}
+        buttonText={messages.tryforfree}
       />
       
       <Container>

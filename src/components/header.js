@@ -36,7 +36,7 @@ class Header extends Component {
           <NavMenu/>
         </div>
         <NavbarButtons>
-          {this.props.page === 'landing' &&
+          {this.props.page !== 'free-trial' &&
             <Link to='/register'><Button primary id="register">{this.props.buttonText}</Button></Link>
           }
           {this.props.page === 'briefing' &&

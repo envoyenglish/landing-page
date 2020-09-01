@@ -158,7 +158,7 @@ export const NavbarButtons = styled.div`
     margin-left: 15%;
   }
 
-  @media only screen and (min-width: 425px) and (max-width: 600px) {
+  @media only screen and (max-width: 425px) {
     #register {
       display: none;
     }
