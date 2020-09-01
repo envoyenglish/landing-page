@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import {Logo, Navbar, Button, NavbarButtons} from '../styles/ui-components';
 import logo from '../assets/logo.png';
+import NavMenu from './menu';
 
 //material
 import MenuItem from '@material-ui/core/MenuItem';
@@ -32,6 +33,7 @@ class Header extends Component {
             <img src={logo} alt="logo" style={iconStyle}/>
           </Link>
           <Logo>Envoy English</Logo>
+          <NavMenu/>
         </div>
         <NavbarButtons>
           {this.props.page === 'landing' &&

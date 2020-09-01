@@ -1,6 +1,51 @@
 import styled, {css} from 'styled-components';
 import {primary, secondary} from './colors';
 
+export const DropdownMenu = styled.div`
+  position: relative;
+  z-index: 1;
+  @media only screen and (max-width: 425px) {
+    display: none;
+  }
+`;
+
+export const DropdownMenuList = styled.ul`
+  list-style-type: none;
+  margin: 0;
+  padding: 25px;
+  padding-bottom: 15px;
+  top: 35px;
+  width: 260px;
+  background-color: white;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+`;
+
+export const DropdownMenuItems = styled.li`
+  padding-bottom: 10px;
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+`;
+
+export const DropdownMenuButton = styled.div`
+  position: absolute;
+  top: -12px;
+  font-size: 18px;
+  font-weight: lighter;
+  font-family: Exo;
+
+  :hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+`;
+
 export const StudentQuote = styled.blockquote`
   padding: 20px;
   width: 90% !important;
