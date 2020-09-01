@@ -3,7 +3,6 @@ import { HashLink as Link } from 'react-router-hash-link';
 import {Container, Grid, BigCell, WhiteCell, Row, ColoredContainer} from '../styles/layout';
 import {Button, MissionCover} from '../styles/ui-components';
 import EmailForm from '../components/email-form';
-import Header from '../components/header';
 import Footer from '../components/footer';
 
 //content

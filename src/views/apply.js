@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {Container, Row} from '../styles/layout';
 import {StyledApplicationForm} from '../styles/ui-components';
-import Header from '../components/header';
 import Footer from '../components/footer';
 
 //content

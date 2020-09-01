@@ -4,7 +4,6 @@ import {StyledPaymentForm} from '../styles/ui-components';
 import {Button, Circle, LevelDescription, Tube, Chip} from '../styles/ui-components';
 import {HashLink} from 'react-router-hash-link';
 import {Link} from 'react-router-dom';
-import Header from '../components/header';
 import Reviews from '../components/reviews';
 import "./../App.css";
 
