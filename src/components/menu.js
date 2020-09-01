@@ -31,7 +31,7 @@ class NavMenu extends React.Component {
  
     render() {
      return (
-         <DropdownMenu>
+         <DropdownMenu onMouseEnter={this.showDropdownMenu}>
           <DropdownMenuButton onClick={this.showDropdownMenu}>Courses<span style={{position: 'absolute', paddingLeft: '10px'}}><FontAwesomeIcon color='gray' size="1x" icon={faCaretDown}/></span> </DropdownMenuButton>
            {this.state.displayMenu ? (
             <DropdownMenuList>

@@ -165,6 +165,26 @@ export const NavbarButtons = styled.div`
   }
 `;
 
+export const DesktopMenu = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
+`;
+
+export const HamburgerMenu = styled.div`
+  @media only screen and (min-width: 601px) {
+    display: none;
+  }
+
+  @media only screen and (max-width: 600) {
+    display: inline-block;
+  }
+`;
+
 export const Logo = styled.p`
   font-family: 'Exo', sans-serif;
   font-weight: 800;

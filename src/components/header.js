@@ -1,8 +1,13 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import {Logo, Navbar, Button, NavbarButtons} from '../styles/ui-components';
+import {Logo, Navbar, Button, NavbarButtons, HamburgerMenu, DesktopMenu} from '../styles/ui-components';
 import logo from '../assets/logo.png';
 import NavMenu from './menu';
+import MobileMenu from './mobilemenu';
+
+//icons
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 //material
 import MenuItem from '@material-ui/core/MenuItem';
@@ -16,7 +21,6 @@ const iconStyle={
 }
 
 class Header extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -28,13 +32,17 @@ class Header extends Component {
 
     return (
       <Navbar className = {this.props.className}>
-        <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
-          <Link to="/">
-            <img src={logo} alt="logo" style={iconStyle}/>
-          </Link>
-          <Logo>Envoy English</Logo>
-          <NavMenu/>
-        </div>
+          <DesktopMenu>
+            <Link to="/">
+              <img src={logo} alt="logo" style={iconStyle}/>
+            </Link>
+            <Logo>Envoy English</Logo>
+            <NavMenu/>
+          </DesktopMenu>
+          <HamburgerMenu>
+          <MobileMenu pageWrapId={"page-wrap"} outerContainerId={"App"} />
+            <FontAwesomeIcon color='black' size="2x" icon={faBars} id="page-wrap"/>
+          </HamburgerMenu>
         <NavbarButtons>
           {this.props.page !== 'free-trial' &&
             <Link to='/register'><Button primary id="register">{this.props.buttonText}</Button></Link>

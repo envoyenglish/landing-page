@@ -552,3 +552,60 @@
   flex-direction: row;
   text-align: left;
 }
+
+/**
+* MOBILE MENU
+*/
+
+.bm-overlay {
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.bm-menu-wrap {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: 1100;
+  width: 300px;
+  height: 100%;
+  transition: all 0.5s ease 0s;
+}
+
+.bm-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  padding: 2.5em 1.5em 0;
+  background-color: #292076;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 36px;
+  width: 36px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: white;
+  height: 36px;
+  width: 36px;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+  color: white !important;
+  padding: 0.8em;
+  text-decoration: none;
+}
+
+#free-trial-menu-item {
+  color: #FDDE59 !important;
+  font-family: 'Exo';
+  font-weight: 800 !important;
+}
