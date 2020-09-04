@@ -1,0 +1,13 @@
+[build]
+  command = "cd functions && npm i && cd .."
+  publish = "public"
+  functions = "functions/"
+
+[dev]
+  publish = "public"
+  functions = "functions/"
+
+[template.environment]
+  STRIPE_PUBLISHABLE_KEY = "pk_test_HNJlXbfEyQSkAk0b3Uz9NEzS00ezyX3UKN"
+  STRIPE_SECRET_KEY = "sk_test_8cy7WCdLvDGgzQeqS7YylBa2007S0mMDfg"
+  STRIPE_WEBHOOK_SECRET = "whsec_1TRYh8TVVm2qtgo6konuQ6AkO86vysaB"
