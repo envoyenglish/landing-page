@@ -268,10 +268,10 @@ export const StyledEmailForm = styled.iframe`
   position: relative;
   min-width: 100%;
   overflow: hidden;
-  height: 487px;
+  height: 350px;
   top: -30px;
   width: 100%;
-  padding-bottom: 5%;
+  padding-bottom: 0;
 
   @media only screen and (max-width: 512px) {
     height: 600px;

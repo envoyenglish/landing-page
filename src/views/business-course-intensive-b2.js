@@ -5,6 +5,8 @@ import {Button, Circle, LevelDescription, Tube, Chip} from '../styles/ui-compone
 import {HashLink} from 'react-router-hash-link';
 import {Link} from 'react-router-dom';
 import Reviews from '../components/reviews';
+import EmailForm from '../components/email-form';
+import Footer from '../components/footer';
 import {secondary} from '../styles/colors';
 import "./../App.css";
 
@@ -50,11 +52,11 @@ class BusinessCommunicationCourse extends Component {
         <Row>
           <p className="hero-description">{messages.description}</p>
         </Row>
-        <Row>
+        {/* <Row>
           <HashLink to="/business-communication-course/#payment-form">
             <Button primary>{messages.register_now}</Button>
           </HashLink>
-        </Row>
+        </Row> */}
       </Container>
 
       <ColoredContainer>
@@ -83,7 +85,7 @@ class BusinessCommunicationCourse extends Component {
         </Row>
 
         {/* Class Schedule */}
-          <h4 style={{textAlign: 'left'}}>Upcoming Courses</h4>
+          {/* <h4 style={{textAlign: 'left'}}>Upcoming Courses</h4>
           <Tube style={{justifyContent: 'space-between', marginBottom: '2em'}}>
             <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>              
               <Circle className="circle">B1+</Circle>
@@ -98,7 +100,7 @@ class BusinessCommunicationCourse extends Component {
             <HashLink to="/business-communication-course/#payment-form">
               <Button primary>{messages.register}</Button>
             </HashLink>
-          </Tube>
+          </Tube> */}
 
       </ColoredContainer>
 
@@ -173,13 +175,18 @@ class BusinessCommunicationCourse extends Component {
         <Reviews/>
       </ColoredContainer>
 
-      <ColoredContainer style={{paddingBottom: '5%'}}>
+      <ColoredContainer style={{paddingBottom: 0}}>
         <h1>{messages.FreeTrial.header}</h1>
-        <h4>{messages.FreeTrial.description}</h4>
-        <Link to='/register'><Button white>{messages.FreeTrial.button}</Button></Link>
+        <Row>
+          <EmailForm url={'https://services.cognitoforms.com/f/neg3yezHME-sqGKAznf3rA?id=37'}/>
+        </Row>
       </ColoredContainer>
 
-      <Container id="payment-form">
+      <Footer/>
+
+
+
+      {/* <Container id="payment-form">
         <h1>{messages.register_now}</h1>
         <StyledPaymentForm 
           src="https://www.cognitoforms.com/f/neg3yezHME-sqGKAznf3rA?id=46"
@@ -188,7 +195,7 @@ class BusinessCommunicationCourse extends Component {
           height="1289"
           seamless="seamless"
         />
-      </Container>
+      </Container> */}
 
       </>
     );

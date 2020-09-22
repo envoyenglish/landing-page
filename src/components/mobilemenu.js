@@ -1,6 +1,7 @@
 import React from 'react';
 import { slide as Menu } from 'react-burger-menu';
 import {Link} from 'react-router-dom';
+import {Chip} from '../styles/ui-components';
 import './../App.css';
 import logo from '../assets/logo.png';
 
@@ -36,7 +37,7 @@ class MobileMenu extends React.Component {
       >
         <Link to='/' onClick={() => this.closeMenu()}><img src={logo} alt="logo" style={iconStyle}/></Link>
         <Link to='/register' onClick={() => this.closeMenu()} id="free-trial-menu-item">FREE Trial Class</Link>
-        <h4>Courses</h4>
+        <h4>Courses (Coming Soon!)</h4>
         <Link to='/business-english-masterclass-intensive' onClick={() => this.closeMenu()}>Business English Masterclass</Link>
         <Link to='/business-communication-course' onClick={() => this.closeMenu()}>Business Communication</Link>
         <Link to='/discussion-course-a2' onClick={() => this.closeMenu()}>Conversation Course</Link>

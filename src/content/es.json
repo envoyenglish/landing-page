@@ -54,9 +54,9 @@
     }
   ],
   "UpcomingCourses": {
-    "header": "Upcoming Courses Próximos Cursos",
+    "header": "Próximos Cursos",
     "description": "¿Ya listo para empezar tu aventura de hablar inglés. Inscríbete en un curso esta semana.",
-    "button_1": "Regístrate"
+    "button_1": "Aprende más"
   },
   "Courses": [
     {

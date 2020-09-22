@@ -1,10 +1,10 @@
 [build]
   command = "cd functions && npm i && cd .."
-  publish = "public"
+  publish = "build"
   functions = "functions/"
 
 [dev]
-  publish = "public"
+  publish = "build"
   functions = "functions/"
 
 [template.environment]

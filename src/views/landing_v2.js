@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import {HashLink} from 'react-router-hash-link';
 import Footer from '../components/footer';
 import Reviews from '../components/reviews';
+import EmailForm from '../components/email-form';
 
 //styles
 import {Container, ColoredContainer, Row, Cell, Grid} from '../styles/layout';
@@ -49,9 +50,9 @@ class LandingPage2 extends Component {
         <Row>
           <p className="hero-description">{messages.Hero.description}</p>
         </Row>
-        <Row id="course-offer">
+        {/* <Row id="course-offer">
           <Chip>NEW!</Chip><HashLink style={{textAlign: 'left', paddingLeft: '8px'}} to='/#courses'><span>{messages.Hero.course_offer}</span></HashLink>
-        </Row>
+        </Row> */}
         <Row>
           <HashLink to="/#courses"><Button>{messages.Hero.button_1}</Button></HashLink>
           <Link to='/register'><Button primary>{messages.Hero.button_2}</Button></Link>
@@ -94,6 +95,24 @@ class LandingPage2 extends Component {
         <blockquote style={{fontSize: '1.2em', textAlign: 'center', fontWeight: '600', margin: '5px', marginBottom: '0'}}>{messages.Results.description}</blockquote>
         <Reviews/>
       </ColoredContainer>
+
+      <ColoredContainer>
+        <h1 style={{paddingBottom: '2%'}}>{messages.Curriculum.header}</h1>
+        <Container style={{padding: '0 5%'}}>
+          {Levels.map((l, i) => {
+            return <Tube key={i}>
+              <Circle className="circle">{l.level}</Circle>
+              <LevelDescription>
+                <p style={{'fontWeight': '600', 'fontFamily': 'Exo, sans-serif'}}>{l.title}</p> 
+                <p>{l.description}</p>
+              </LevelDescription>
+            </Tube>
+          })}
+          <Row><h4>{messages.Curriculum.description}</h4></Row>
+          <Link to='/register'><Button white>{messages.Hero.button_2}</Button></Link>
+        </Container>
+      </ColoredContainer>
+
       <Container id="courses">
         <h1>{messages.UpcomingCourses.header}</h1>
         <Row>
@@ -118,23 +137,16 @@ class LandingPage2 extends Component {
         }
         </Grid>
       </Container>
-      <ColoredContainer>
-        <h1 style={{paddingBottom: '2%'}}>{messages.Curriculum.header}</h1>
-        <Container style={{padding: '0 5%'}}>
-          {Levels.map((l, i) => {
-            return <Tube key={i}>
-              <Circle className="circle">{l.level}</Circle>
-              <LevelDescription>
-                <p style={{'fontWeight': '600', 'fontFamily': 'Exo, sans-serif'}}>{l.title}</p> 
-                <p>{l.description}</p>
-              </LevelDescription>
-            </Tube>
-          })}
-          <Row><h4>{messages.Curriculum.description}</h4></Row>
-          <Link to='/register'><Button white>{messages.Hero.button_2}</Button></Link>
-        </Container>
+
+      <ColoredContainer style={{paddingBottom: 0}}>
+        <h1>{messages.EmailForm.header}</h1>
+        <Row>{messages.EmailForm.description}</Row>
+        <Row>
+          <EmailForm url={'https://services.cognitoforms.com/f/neg3yezHME-sqGKAznf3rA?id=37'}/>
+        </Row>
       </ColoredContainer>
-      <Footer header={messages.Contact.header}/>
+
+      <Footer/>
       </>
     );
   }
