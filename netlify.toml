@@ -1,11 +1,14 @@
 [build]
   command = "cd functions && npm i && cd .."
-  publish = "build"
+  publish = "public"
   functions = "functions/"
 
 [dev]
-  publish = "build"
+  publish = "public"
   functions = "functions/"
+
+[[plugins]]
+  package = "@netlify/plugin-functions-install-core"
 
 [template.environment]
   STRIPE_PUBLISHABLE_KEY = "pk_test_HNJlXbfEyQSkAk0b3Uz9NEzS00ezyX3UKN"
