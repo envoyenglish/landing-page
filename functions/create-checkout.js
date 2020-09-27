@@ -27,7 +27,7 @@ exports.handler = async (event) => {
     payment_method_types: ['card'],
     billing_address_collection: 'auto',
     shipping_address_collection: {
-      allowed_countries: ['US', 'CA'],
+      allowed_countries: ['MX', 'US'],
     },
 
     /*
@@ -36,8 +36,8 @@ exports.handler = async (event) => {
      * other environment variables Netlify exposes:
      * https://docs.netlify.com/configure-builds/environment-variables/
      */
-    success_url: `${process.env.URL}/success.html`,
-    cancel_url: process.env.URL,
+    success_url: `${process.env.URL}/payment-success`,
+    cancel_url: `${process.env.URL}/${product.url}`,
     line_items: [
       {
         name: product.name,

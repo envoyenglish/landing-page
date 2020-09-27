@@ -1,18 +1,29 @@
 [
   {
-    "sku": "DEMO001",
-    "name": "This Pretty Plant",
-    "description": "Look at this pretty plant. Photo by Galina N on Unsplash.",
-    "image": "https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=600&h=600&q=80",
-    "amount": 1000,
-    "currency": "USD"
+    "sku": "sku_Hwqa8xPUzTNHpb",
+    "name": "Communicate like a Boss!",
+    "description": "Intensive Masterclass for business professionals",
+    "image": "https://document-export.canva.com/DAD-nfb52fM/8/thumbnail/0001-7378341741.png",
+    "amount": 220000,
+    "currency": "MXN",
+    "url": "business-english-masterclass-intensive"
   },
   {
-    "sku": "DEMO002",
-    "name": "Adventure Mug",
-    "description": "We’re going on an adventure! Photo by Annie Spratt on Unsplash.",
-    "image": "https://images.unsplash.com/photo-1454329001438-1752daa90420?auto=format&fit=crop&w=600&h=600&q=80",
-    "amount": 1500,
-    "currency": "USD"
+    "sku": "sku_HxXu6yNaebYtoE",
+    "name": "Business Communication Course",
+    "description": "Improve your English in a professional setting",
+    "image": "https://document-export.canva.com/DAEEJzyfLdQ/14/thumbnail/0001-9330060016.png",
+    "amount": 119900,
+    "currency": "MXN",
+    "url": "business-communication-course"
+  },
+  {
+    "sku": "sku_I6DyNJMlJJZgdO",
+    "name": "Let's Talk! Communicate with Confidence",
+    "description": "Envoy English conversation course to boost your communication skills in every day situations",
+    "image": "https://document-export.canva.com/DAEDHV80VAk/17/thumbnail/0001-10237584673.png",
+    "amount": 119900,
+    "currency": "MXN",
+    "url": "discussion-course-a2"
   }
 ]

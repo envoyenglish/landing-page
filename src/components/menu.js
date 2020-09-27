@@ -37,7 +37,7 @@ class NavMenu extends React.Component {
             <DropdownMenuList>
               <DropdownMenuItems onClick={this.hideDropdownMenu}><Link to='/business-english-masterclass-intensive'>Business English Masterclass</Link></DropdownMenuItems>
               <DropdownMenuItems onClick={this.hideDropdownMenu}><Link to='/business-communication-course'>Business Communication Course</Link></DropdownMenuItems>
-              <DropdownMenuItems onClick={this.hideDropdownMenu}><Link to='/discussion-course-a2'>Conversation Course</Link></DropdownMenuItems>
+              <DropdownMenuItems onClick={this.hideDropdownMenu}><Link to='/discussion-course-a2'>Let's Talk! Conversation Course</Link></DropdownMenuItems>
            </DropdownMenuList>
             ) : null
          }

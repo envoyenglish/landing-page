@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-import axios from 'axios';
 import {loadStripe} from '@stripe/stripe-js';
+import {Container} from '../styles/layout';
+import {Button} from '../styles/ui-components';
 
 class Checkout extends Component {
   constructor(props) {
@@ -11,7 +12,6 @@ class Checkout extends Component {
   }
 
   componentDidMount() {
-    console.log('CHECKOUT MOUNTED')
     this.loadProducts();
   }
 
@@ -30,31 +30,27 @@ class Checkout extends Component {
       body: JSON.stringify(data),
     }).then((res) => res.json());
   
-    // const stripe = Stripe(response.publishableKey);
-    // const { error } = await stripe.redirectToCheckout({
-    //   sessionId: response.sessionId,
-    // });
+    const stripe = await loadStripe(response.publishableKey);
+    const { error } = await stripe.redirectToCheckout({
+      sessionId: response.sessionId,
+    });
   
-    // if (error) {
-    //   console.error(error);
-    // }
+    if (error) {
+      console.error(error);
+    }
   }
 
-  loadProducts =  () => {
+  loadProducts = () => {
     fetch('/.netlify/functions/get-products')
-      .then(res => {
-        const products = res.data;
-        console.log('PRODUCTS', products)
-        this.setState({products})
-      })
-      .catch((err) => console.error(err));
+      .then(res => res.json())
+      .then(products => this.setState({products}))
+      .catch((err) => console.error(err))
   }
 
   render() {
-    return <div>
-      <div>{JSON.stringify(this.state.products)}</div>
-      <button onClick={() => this.createCheckout()}>Checkout</button>
-    </div>
+    return <Container>
+      <Button onClick={() => this.createCheckout()}>Buy Class</Button>
+    </Container>
   }
 };
 

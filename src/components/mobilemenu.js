@@ -40,7 +40,7 @@ class MobileMenu extends React.Component {
         <h4>Courses (Coming Soon!)</h4>
         <Link to='/business-english-masterclass-intensive' onClick={() => this.closeMenu()}>Business English Masterclass</Link>
         <Link to='/business-communication-course' onClick={() => this.closeMenu()}>Business Communication</Link>
-        <Link to='/discussion-course-a2' onClick={() => this.closeMenu()}>Conversation Course</Link>
+        <Link to='/discussion-course-a2' onClick={() => this.closeMenu()}>Let's Talk! Conversation Course</Link>
       </Menu>
     );
   }

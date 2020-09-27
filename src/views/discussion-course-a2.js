@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
+import {loadStripe} from '@stripe/stripe-js';
 import {Container, Row, ColoredContainer, Cell, Grid, WhiteCellCentered} from '../styles/layout';
-import {StyledPaymentForm} from '../styles/ui-components';
 import {Button, Circle, LevelDescription, Tube, Chip} from '../styles/ui-components';
 import {HashLink} from 'react-router-hash-link';
 import {Link} from 'react-router-dom';
@@ -28,6 +28,31 @@ class CommunicationCourseA2 extends Component {
     this.setState({messages: translations[this.props.language]});
   }
 
+  createCheckout = async () => {
+
+    const data = {
+      sku: "sku_I6DyNJMlJJZgdO",
+      quantity: 1,
+    };
+
+    const response = await fetch('/.netlify/functions/create-checkout', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    }).then((res) => res.json());
+  
+    const stripe = await loadStripe(response.publishableKey);
+    const { error } = await stripe.redirectToCheckout({
+      sessionId: response.sessionId,
+    });
+  
+    if (error) {
+      console.error(error);
+    }
+  }
+
   render() {
     const {messages} = this.state;
     const weeks = messages.weeks;
@@ -40,11 +65,9 @@ class CommunicationCourseA2 extends Component {
         <Row>
           <p className="hero-description">{messages.description}</p>
         </Row>
-        {/* <Row>
-          <HashLink to="/business-communication-course/#payment-form">
-            <Button primary>{messages.register_now}</Button>
-          </HashLink>
-        </Row> */}
+        <Row>
+          <Button onClick={() => this.createCheckout()} primary>{messages.register_now}</Button>
+        </Row>
       </Container>
 
       <ColoredContainer>
@@ -113,16 +136,6 @@ class CommunicationCourseA2 extends Component {
       </ColoredContainer>
 
       <Footer/>
-
-      {/* <Container id="payment-form">
-        <h1>{messages.register_now}</h1>
-        <StyledPaymentForm 
-          src="https://www.cognitoforms.com/f/neg3yezHME-sqGKAznf3rA?id=48"
-          scrolling="no"
-          width="1089"
-          frameBorder="0"
-        />
-      </Container> */}
       </>
     );
   }

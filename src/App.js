@@ -8,7 +8,8 @@ import SignupWidget from './views/signup-widget';
 import BusinessProgram from './views/business';
 import Apply from './views/apply';
 import FeedbackForm from './views/feedback';
-import Checkout from './views/checkout';
+import Success from './views/success';
+import Failure from './views/failure';
 
 //courses
 import BusinessCommunicationCourseIntensiveB2 from './views/business-course-intensive-b2';
@@ -48,7 +49,8 @@ function App() {
     <ScrollToTop/>
     <Switch>
       <Route exact path='/' component={() => <LandingPage2 language={language}/>} />
-      <Route path='/checkout' component={Checkout}/>
+      <Route path='/payment-success' component={Success}/>
+      <Route path='/payment-failure' component={Failure}/>
       <Route path='/free-trial' component={() => <SignupWidget language={language}/>}/>
       <Route path='/register' component={() => <Apply language={language}/> }/>
       <Route path='/business' component={() => <BusinessProgram language={language}/>}/>
