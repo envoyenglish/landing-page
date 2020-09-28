@@ -1,9 +1,10 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import {Link} from 'react-router-dom';
 import {Logo, Navbar, Button, NavbarButtons, HamburgerMenu, DesktopMenu} from '../styles/ui-components';
 import logo from '../assets/logo.png';
 import NavMenu from './menu';
 import MobileMenu from './mobilemenu';
+import MenuContext from './menuContext';
 
 //icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -22,6 +23,8 @@ const iconStyle={
 
 function Header(props) {
 
+  const ctx = useContext(MenuContext);
+
   let buttonText = 'Prueba gratis';
     if (props.language === 'EN') {
       buttonText = 'Try for free';
@@ -39,8 +42,11 @@ function Header(props) {
           <NavMenu/>
         </DesktopMenu>
         <HamburgerMenu>
-        <MobileMenu pageWrapId={"page-wrap"} outerContainerId={"App"} />
-          <FontAwesomeIcon color='black' size="2x" icon={faBars} id="page-wrap"/>
+        <MobileMenu 
+          isOpen={ctx.isMenuOpen}
+          onStateChange={(state) => ctx.stateChangeHandler(state)}
+        />
+          <FontAwesomeIcon onClick={ctx.toggleMenu} color='black' size="2x" icon={faBars}/>
         </HamburgerMenu>
       <NavbarButtons>
         {props.page !== 'free-trial' &&
