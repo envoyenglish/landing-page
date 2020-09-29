@@ -11,8 +11,6 @@
   package = "@netlify/plugin-functions-install-core"
 
 [template.environment]
-  STRIPE_PUBLISHABLE_KEY = "pk_live_q5SNfZTl7zbAebcG2cJh4NRH00lWSWxfIn"
-  STRIPE_PUBLISHABLE_KEY_TEST = "pk_test_HNJlXbfEyQSkAk0b3Uz9NEzS00ezyX3UKN"
-  STRIPE_SECRET_KEY = "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"
-  STRIPE_SECRET_KEY_TEST = "sk_test_8cy7WCdLvDGgzQeqS7YylBa2007S0mMDfg"
+  STRIPE_PUBLISHABLE_KEY = "pk_test_HNJlXbfEyQSkAk0b3Uz9NEzS00ezyX3UKN"
+  STRIPE_SECRET_KEY = "sk_test_8cy7WCdLvDGgzQeqS7YylBa2007S0mMDfg"
   STRIPE_WEBHOOK_SECRET = "whsec_1TRYh8TVVm2qtgo6konuQ6AkO86vysaB"
